@@ -1,0 +1,590 @@
+
+.container{
+    width:100%;
+    height:100%;
+}
+
+.seccion-hero{
+    width:100%;
+    height:100vh;
+    
+    background-image:url(img/Hero4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+.container-marco{
+    border:1px solid var(--mainColor);
+    
+    width:90%;
+    height:80%;
+    margin:20px auto;
+    
+    position:relative;
+}
+.lineaMarco{
+    border:1px solid var(--mainColor);
+    height: 5%;
+    
+    position:absolute;
+    bottom:-5.3%;
+    left:50%;
+}
+.logo{
+    background-image:url(img/LogoBlanco.svg);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+/*
+    SECCION BIOGRAFIA
+*/
+
+.seccion-biografia{
+    width:100%;
+    margin-bottom:50px;
+}
+.biografia{
+    width:100%;
+    height:100%;
+    
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.imgCarmen{
+    width:45%;
+    height:100%;
+    
+    display:flex;
+    align-content:center;
+    justify-content:center;
+
+}
+
+.imgCarmen img{
+    max-width:70%;
+    max-height:70%;
+
+}
+.titulo-carmen{
+    font-family:var(--tipografiaFantasia);
+    font-size:var(--tamañoTitutlosFantasia);
+    
+    margin-bottom:20px;
+}
+.texto{
+    width:45%;
+    text-align:justify;
+}
+.texto p{
+    margin-bottom:15px;
+}
+
+/*
+    SECCION OBJETIVOS
+*/
+
+.seccion-objetive{
+    width:100%;
+    min-height:100vh;
+}
+
+
+.title{
+
+    height:7vh;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+    
+    width:100%;
+    margin-bottom:20px;
+}
+
+.objetive-title{
+    font-size:var(--tamañoInterSubTitles);
+    font-weight:var(--pesoRegularInter);
+}
+.objetives{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-content:center;
+    
+    height:100%;
+
+}
+.container-objetivos{
+
+    display:flex;
+    flex-wrap:wrap;
+    flex:1;
+    height:auto;
+    
+    gap:5px;
+    margin:20px;
+}
+.objetive1{
+
+   flex:1;
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items: center;
+}
+.objetive2{
+
+   flex:1;
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items: center;
+}
+.objetive3{
+
+   flex:1;
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.imgObjetive{
+    flex:2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgObjetive img{
+    max-width: 550px;
+    max-height: 400px;
+}
+.objetive-subtitle{
+    font-size:var(--tamañoInterSubTitles);
+    font-weight:var(--pesoRegularInter);
+    
+    margin-bottom:10px;
+}
+.objetive-text{
+    flex: 5;
+    width: 90%;
+    
+    text-align:justify;
+    margin-top:20px;
+
+}
+/*
+    TERCERA SECCION
+*/
+
+.seccion-history{
+    width:100%;
+    min-height:100vh;
+    background-color:black;
+    
+    display:flex;
+}
+
+.history{
+    flex:1;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    margin:10px;
+}
+
+.imgHistory{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.imgHistory img{
+    max-height:500px;
+    max-width:400px;
+}
+
+.history-text{
+    flex:2;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    
+    width:80%;
+    
+    color:var(--white);
+    text-align:justify;
+    padding:10px 10px 0 0;
+    
+
+}
+
+.history-subtitle{
+    margin-bottom:20px;
+    font-family:var(--tipografiaFantasia);
+    font-size: var(--tamañoTitutlosFantasia);
+}
+
+/*
+    CUARTA SECCION
+*/
+
+.seccion-reservation{
+    width:100%;
+    height:100vh;
+    
+    background-image: url(img/Space.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.reservation{
+    
+    display:flex;
+    flex:1;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    
+    width:45%;
+    height:100%;
+    margin-left:20px;
+}
+
+.titulo-descripcion{
+    font-family:var(--tipografiaFantasia);
+    font-size:var(--tamañoTitutlosFantasia);
+    
+    margin-bottom:20px;
+}
+
+.boton-reservas{
+    width:30%;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+input[type="submit"]{
+    border: 0;
+    border-top: 1px solid black;
+    width: 150%;
+
+    padding: 10px;
+
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    border: 0;
+    border-bottom: 1px solid #A1624C;
+    color: #A1624C;
+    width: 150%;
+
+    padding: 10px;
+
+    cursor: pointer;
+}
+.botonReservas a{
+    color:black;
+    font-size:var(--tamañoInterSubTitles);
+    font-weight:var(--pesoRegularInter);
+}
+/*
+    SECCION INTERIOR
+*/
+.seccion-interior1{
+    width:100%;
+    min-height:auto;
+}
+
+.interior1{
+    width:100%;
+    height:100%;
+    padding-top:20px;
+    padding-bottom:20px;
+    gap:20px;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+    background-color:black;
+}
+.interior1-title{
+   
+    text-align:center;
+    color:var(--white);
+}
+.interior1-title h4{
+    font-weight:var(--pesoRegularInter);
+    font-size:var(--tamañoInterSubTitles);
+}
+
+.interior1-text{
+    color:var(--white);
+}
+
+.imgInterior img{
+    max-width:700px;
+
+}
+.slider1{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;
+}
+
+.slider1-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    width: 15%;
+}
+
+.item1{
+    flex:1;
+    height: 2px;
+    background-color: white;
+    margin-right: 10px;
+
+    cursor: pointer
+}
+
+/*
+    INTERIOR 2
+*/
+
+.seccion-interior2{
+    width:100%;
+    min-height:auto;
+    margin-bottom:20px;
+}
+
+.interior2{
+    width:100%;
+    height:100%;
+    padding-top:20px;
+    padding-bottom:20px;
+    gap:20px;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    background-color:white;
+}
+.interior2-title{
+   
+    text-align:center;
+    color:black;
+}
+.interior2-title h4{
+    font-weight:var(--pesoRegularInter);
+    font-size:var(--tamañoInterSubTitles);
+}
+
+.interior2-text{
+    color:black;
+}
+
+.slider2{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;
+}
+
+.slider2-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    width: 15%;
+}
+
+.item2{
+    flex:1;
+    height: 2px;
+    background-color: black;
+    margin-right: 10px;
+
+    cursor: pointer
+}
+
+/*
+
+General SECCION INTERIOR
+
+*/
+
+
+.slider-active1{
+    background-color:var(--mainColor);
+}
+
+.imgInterior img{
+    max-width:700px;
+
+}
+
+
+/*
+    MEDIA QUERYS
+*/
+
+@media screen and (max-width:1200px) {
+    .imgObjetive{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    .objetive-text{
+        width:80%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    
+    .objetive1, .objetive2, .objetive3{
+        margin-bottom:20px;
+        flex:auto;
+    }
+    
+    .biografia{
+        flex-direction:column
+    }
+    .imgCarmen{
+        margin-top:20px;
+    }
+    .texto{
+        margin-top:20px;
+        width:80%;
+    }
+    
+    .history{
+        flex-direction:column;
+    }
+    .imgHistory{
+        margin-top:20px;
+    }
+    .history-text{
+        gap:20px
+    }
+}
+@media screen and (max-width:875px){
+    .imgInterior img{
+        max-width:500px;
+    }
+    .imgCarmen img{
+        max-width:70%;
+        max-height:50%;
+    }
+    .imgObjetive img{
+        max-height:500px;
+        max-width:300px;
+    }
+    
+    .objetive-text{
+        justify-content:start;
+        align-items:start;
+    }
+    .imgHistory img{
+        max-height:400px;
+        max-width:300px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .container-footer{
+        flex-direction:column;
+    }
+    .navegacion{
+        align-items: normal;
+    }
+    .navegacion-lista{
+        flex-direction: column;
+    }
+    .imgCarmen img{
+        max-width:70%;
+        max-height:40%;
+    }
+    .imgInterior img{
+        max-width:400px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .container-marco{
+        display:none;
+    }
+    .lineaMarco{
+        display:none;
+    }
+    .socialMediaNav{
+        flex-direction:column;
+        align-items:center;
+    }
+    .imgCarmen img{
+        max-width:70%;
+        max-height:20%;
+    }
+
+    .imgInterior img{
+        max-width:300px;
+    }
+    .imgHistory img{
+        max-height:400px;
+        max-width:200px;
+    }
+    .lineaNegra{
+        width:80%;
+    }
+}
+
+@media screen and (max-width:350px){
+    body{
+        width:100%;
+    }
+    .imgCarmen img{
+        max-width:70%;
+        max-height:10%;
+    }
+    .imgInterior img{
+        max-width:250px;
+    }
+    .imgObjetive img{
+        max-height:400px;
+        max-width:200px;
+    }
+}

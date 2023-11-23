@@ -1,0 +1,393 @@
+
+/*
+    RESERVAS
+*/
+    /*  
+        ESTILO TABLAS
+    */
+    .calendario {
+        width: 400px;
+        height: 400px;
+    
+        margin-right: 20px;
+        border-right: 1px solid black;
+    }
+    
+    tr {
+        text-align: center;
+    }
+    
+    td {
+        cursor: pointer;
+        transition: all 1s ease 0s;
+    }
+    
+    td:hover {
+        background-color: #A1624C;
+        opacity: .5;
+        color: white;
+    }
+    /*
+    */
+    .interfaz-reserva {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    
+        margin-top: 20px;
+        gap: 20px;
+
+    }
+.logo{
+    background-image:url(img/LogoBlanco.svg);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.cabecera {
+    margin-left: 20px;
+    width: fit-content;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.cabecera-numero {
+    font-weight: var(--pesoRegularInter);
+    font-size: var(--tamañoInterTitles);
+    color: var(--mainColor);
+    opacity: 0.6;
+}
+.cabecera-titulo{
+    font-weight: var(--pesoRegularInter);
+    font-size: var(--tamañoInterTitles);
+}
+
+.contenedor-calendario{
+    flex: 1;
+
+    display: flex;
+    justify-content: end;
+}
+
+    /*
+        ESTILO FORMULARIO
+    */
+        .formulario {
+            flex: 1;
+        }
+        form{
+            margin: 0;
+
+            width: auto;
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            padding: 20px;
+
+            width: 70%;
+        }
+        .input{
+            flex: 1;
+        }
+        .item{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        
+            gap: 20px;
+        
+        }
+        .item2{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        
+            gap: 20px;
+        
+        }
+
+/*
+    SEGUNDA SECCION
+*/
+.contenedor-contact{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+    gap: 20px;
+
+}
+
+.datos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    padding-right: 20px;
+    gap: 20px;
+    border-right: 1px solid black;
+
+}
+
+.telefono,
+.email,
+.direccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+.titulo {
+    font-weight: var(--pesoRegularInter);
+    font-size: var(--tamañoInterSubTitles);
+    margin-bottom: 20px;
+
+    position: relative;
+}
+.phone::before{
+    content: " ";
+    position: absolute;
+
+
+    left: -70%;
+    bottom:0;
+    height: 30px;
+    width: 30px;
+
+    background-image: url(../img/phone2.png);
+    background-size: contain;
+
+}
+
+.email::before{
+    content: " ";
+    position: absolute;
+
+
+    left: -80%;
+    bottom:0;
+    height: 30px;
+    width: 30px;
+
+    background-image: url(../img/email1.png);
+    background-size: contain;
+}
+
+.addres::before{
+    content: " ";
+    position: absolute;
+    
+    left: -50%;
+    bottom:0;
+    height: 30px;
+    width: 30px;
+
+    background-image: url(../img/gps2.png);
+    background-size: contain;
+}
+
+.formulario2{
+    flex: 1;
+}
+/*
+
+    Ubicacion GPS
+
+*/
+
+.contenedor-ubicacion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 20px;
+}
+.wrapper-gps{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    height: 50vh;
+}
+
+/*
+    EVENTOS
+
+*/
+.contenedor-eventos{
+    margin-top: 20px;
+    padding-top: 20px;
+
+    background-color: black;
+    color: var(--white);
+}
+.evento-texto{
+    height: auto;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: right;
+    padding: 20px;
+
+    border-right: 1px solid var(--mainColor);
+}
+.evento-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.evento-img img{
+    width: 90%;
+    height: 70%;
+}
+
+.boton-reservas{
+    border-top: 1px solid var(--white);
+    color: var(--white);
+}
+.evento-img{
+    flex: 1;
+}
+/*
+
+    ESCUELA
+
+*/
+.contenedor-clase{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.informacion-clase{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+    padding: 20px;
+}
+.escuela-img{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.escuela-img img{
+    width: 750px;
+
+}
+.div-escuela{
+    width: 100%;
+}
+.boton-reservas-escuela{
+    border-top: 1px solid var(--white);
+    color: black;
+}
+
+
+/*
+
+    MEDIA QUERYS
+
+*/
+
+@media screen and (max-width:1200px){
+    .escuela-img img{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .escuela-img img{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:850px){
+    .wrapper{
+        flex-direction: column;
+    }
+    .contenedor-calendario{
+        justify-content: center;
+        align-items: center;
+    }
+    .calendario{
+        border: 0;
+    }
+    .formulario, .formulario2{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .datos{
+        border: 0;
+    }
+    .telefono, .email, .direccion{
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .evento-texto{
+        border: 0;
+        text-align: justify;
+    }
+
+    .evento-img img{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:750px){
+    .container-footer{
+        flex-direction:column;
+    }
+    .navegacion{
+        align-items: normal;
+    }
+    .navegacion-lista{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:550px){
+    .escuela-img img{
+        width: 350px;
+    }
+    .calendario{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:480px){
+    .socialMediaNav{
+        flex-direction:column;
+        align-items:center;
+    }  
+    .calendario{
+        width: 300px;
+        height: 300px;
+    }
+    .escuela-img img{
+        width: 250px;
+    }
+}
