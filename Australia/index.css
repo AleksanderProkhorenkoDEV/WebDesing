@@ -1,0 +1,759 @@
+/*
+
+    SECCION HERO
+
+*/
+
+.hero {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+
+  background-image: url(img/OperaSydney-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cabecera {
+  height: 10vh;
+
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  flex: 0 0 20%;
+  padding-left: 2rem;
+
+  background-image: url(img/logo-borderBlanco.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.menu {
+  flex: 0 0 30%;
+  padding-right: 2rem;
+}
+
+/*
+        Personalizamos el slogan
+    */
+.slogan {
+  width: 50%;
+  position: absolute;
+  left: 5%;
+  top: 35%;
+
+  color: white;
+}
+.slogan h1 {
+  font-size: var(--titulosImagen);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-style: italic;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.palabraAustralia {
+  font-size: clamp(2.5rem, 1.833rem + 2.222vw, 4.5rem);
+  font-weight: 500;
+  font-style: italic;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.slogan p {
+  font-size: var(--titulosSecciones);
+  font-weight: 200;
+}
+
+/*
+
+    HISTORIA AUSTRALIA
+
+*/
+.historia-australia {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.historia-item1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.historia-imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.historia-imagen img {
+  width: 600px;
+  height: 400px;
+}
+.historia-parrafo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  text-align: justify;
+  padding-left: 2rem;
+  padding-right: 6rem;
+}
+.historia-parrafo2{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  text-align: justify;
+  padding-left: 6rem;
+  padding-right: 2rem;
+}
+.historia-item2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+/*
+
+    SECCION COLLAGE 
+
+*/
+
+.collage {
+  height: 80vh;
+  width: 100%;
+  margin-top: 4rem;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.collage-fila {
+  height: 50%;
+
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imagen-menor {
+  background-image: url(img/Autralia4k.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  flex: 0 0 40%;
+  height: 100%;
+}
+.imagen-mayor {
+  background-image: url(img/melbourne-atardecer.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  flex: 0 0 60%;
+  height: 100%;
+}
+.imagen-menor2 {
+  background-image: url(img/Perth-rio-Swan.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  flex: 0 0 40%;
+  height: 100%;
+}
+.imagen-mayor2 {
+  background-image: url(img/Deintre-amanecer.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+
+  flex: 0 0 60%;
+  height: 100%;
+}
+.texto {
+  z-index: 999;
+  color: var(--blanco);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  font-style: italic;
+
+  font-size: var(--titulosImagen);
+  font-weight: var(--semiboldItalic);
+
+  position: absolute;
+  top: 42%;
+  left: 18%;
+}
+
+/*
+
+    CAIRNS CIUDAD
+
+*/
+
+.cairns {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cairns-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cairns-texto-item {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.cabereza-seccion-centro {
+  width: 50%;
+  height: 5vh;
+
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: var(--tituloCabecera);
+  font-style: italic;
+  font-weight: 600;
+
+  background-color: var(--azulMain);
+  color: var(--blanco);
+
+  margin: auto;
+}
+
+.nombre-atraccion-ciudad {
+  font-size: var(--titulosSecciones);
+  font-style: italic;
+  font-weight: var(--regular);
+  margin-left: 2rem;
+
+  color: var(--azulClaro);
+}
+
+/*
+    
+        Collage Ciudad Cairns
+
+    */
+
+.collage-ciudad {
+  height: 80vh;
+  width: 100%;
+}
+
+.collage-cairns-fila1 {
+  width: 100%;
+  height: 60%;
+  background-image: url(img/Cairns-Gran-Barrera.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.collage-ciudad-fila2 {
+  height: 40%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.imagenFullWidth {
+  flex: 1 0 100%;
+}
+.imagen1,
+.imagen2,
+.imagen3 {
+  flex: 1 0 32%;
+}
+
+.imagen1 {
+  background-image: url(img/Cairns-Barrera-Coral.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.imagen2 {
+  background-image: url(img/Cairns-Barrera-Coral2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.imagen3 {
+  background-image: url(img/Cairns-Barrera-Coral3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.texto-collage-ciudad {
+  width: 50%;
+  margin: auto;
+}
+
+/*
+
+        COLLAGE 2
+
+    */
+
+.collage-cairns-fila2 {
+  width: 100%;
+  height: 60%;
+  background-image: url(img/deintree-full-width.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.imagen4,
+.imagen5,
+.imagen6 {
+  flex: 1 0 32%;
+}
+.imagen4 {
+  background-image: url(img/Daintree-lago_11zon.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.imagen5 {
+  background-image: url(img/Deintre-riachuelo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.imagen6 {
+  background-image: url(img/Cascada-epica-grampains.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/*
+
+    MELBOURNE
+
+*/
+
+.melbourne {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/*
+
+        COLLAGE MELBOURNE
+
+    */
+
+.collage-melbourne-fila1 {
+  width: 100%;
+  height: 60%;
+  background-image: url(img/Full-widht-grampians_11zon.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.imagen7,
+.imagen8,
+.imagen9 {
+  flex: 1 0 32%;
+}
+.imagen7 {
+  background-image: url(img/Grampians.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.imagen8 {
+  background-image: url(img/Grampians-rio_11zon.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.imagen9 {
+  background-image: url(img/Cascada-Grampians.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/*
+
+        COLLAGE 2 MELBOURNE
+
+    */
+
+.collage-melbourne-fila2 {
+  width: 100%;
+  height: 60%;
+  background-image: url(img/melbourne-grafiti_11zon.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.imagen10,
+.imagen11,
+.imagen12 {
+  flex: 1 0 32%;
+}
+
+.imagen10 {
+  background-image: url(img/Arte-callejero-melbourne.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.imagen11 {
+  background-image: url(img/Hoiser-arte-callejero.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.imagen12 {
+  background-image: url(img/Melbourne-arte-callehero.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/*
+
+  PERTH
+
+*/
+.perth {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.collage-ciudad-perth {
+  height: 150vh;
+}
+
+.collage-perth-fila1 {
+  width: 100%;
+  height: 25%;
+  background-image: url(img/Full_width_bellTowe.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.collage-ciudad-fila2-perth {
+  height: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.imagen13,
+.imagen14,
+.imagen15 {
+  flex: 1 0 32%;
+}
+.imagen13 {
+  background-image: url(img/Bell_Tower_800x1200.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.imagen14 {
+  background-image: url(img/Bell_Tower2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.imagen15 {
+  background-image: url(img/swan-bell-noche-pert.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/*
+
+        COLLAGE 2 PERTH
+
+    */
+
+.collage-perth-fila2 {
+  width: 100%;
+  height: 60%;
+  background-image: url(img/peth-kings.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.imagen16,
+.imagen17,
+.imagen18 {
+  flex: 1 0 32%;
+}
+
+.imagen16 {
+  background-image: url(img/King_park_perth.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.imagen17 {
+  background-image: url(img/King_parck_perth.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.imagen18 {
+  background-image: url(img/King_parc_perth_11zon.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .historia-imagen img {
+    width: 500px;
+    height: 300px;
+  }
+  .texto {
+    top: 45%;
+    font-size: 3rem;
+  }
+
+  .menu {
+    flex: 0 0 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .texto {
+    top: 47%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .historia-item1,
+  .historia-item2 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .menu {
+    flex: 0 0 50%;
+  }
+  .slogan {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 878px) {
+  .texto {
+    font-size: clamp(1rem, -0.6rem + 5.333vw, 2rem);
+  }
+  .texto-collage-ciudad {
+    width: 80%;
+  }
+  .cairns-texto-item {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .texto {
+    top: 47.5%;
+  }
+  .collage-ciudad {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .collage-cairns-fila1 {
+    height: 40%;
+  }
+  .collage-ciudad-fila2 {
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+  .imagen1,
+  .imagen2,
+  .imagen3 {
+    width: 100%;
+    height: 50%;
+  }
+  .collage-cairns-fila2 {
+    height: 40%;
+  }
+  .collage-melbourne-fila1 {
+    height: 40%;
+  }
+  .collage-melbourne-fila2 {
+    height: 40%;
+  }
+  .collage-perth-fila2 {
+    height: 40%;
+  }
+  .collage-ciudad-fila2-perth {
+    flex-direction: column;
+  }
+  .imagen13,
+  .imagen14,
+  .imagen15 {
+    background-size: contain;
+  }
+  .cabecera-historia {
+    font-size: 13px;
+  }
+  .cabereza-seccion-centro {
+    font-size: clamp(1rem, -0.28rem + 4.267vw, 1.8rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-item1 {
+    height: auto;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .imgOpera {
+    height: 40%;
+  }
+  .borde {
+    width: 30% !important;
+  }
+  .historia-imagen img {
+    width: 350px;
+    height: 250px;
+  }
+  .gmail::before {
+    left: 37%;
+    top: 30%;
+  }
+  .facebok::before {
+    left: 37%;
+    top: 69%;
+  }
+  .insta::before {
+    left: 37%;
+    top: 50%;
+  }
+  .telefono::before {
+    left: 35%;
+  }
+  .email::before {
+    left: 30%;
+    top:83%
+  }
+  .historia-parrafo, .historia-parrafo2{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .copy {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imgOpera {
+    display: none;
+  }
+  .navfooter {
+    height: 30%;
+  }
+  .cabereza-seccion-centro {
+    width: 90%;
+  }
+  .slogan {
+    width: none;
+  }
+
+  .texto {
+    font-size: 18px;
+  }
+  .logo {
+    flex: 0 0 40%;
+  }
+  .nombre-atraccion-ciudad {
+    margin-right: 2rem;
+  }
+  .gmail::before {
+    left: 34%;
+    top: 26%;
+  }
+  .facebok::before {
+    left: 34%;
+    top: 51%;
+  }
+  .insta::before {
+    left: 34%;
+    top: 38%;
+  }
+  .telefono::before {
+    left: 30%;
+  }
+  .email::before {
+    left: 25%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .email::before {
+    left: 23%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .gmail::before {
+    left: 28%;
+    top: 26%;
+  }
+  .facebok::before {
+    left: 28%;
+    top: 51%;
+  }
+  .insta::before {
+    left: 28%;
+    top: 38%;
+  }
+  .telefono::before {
+    left: 28%;
+  }
+  .email::before {
+    left: 20%;
+  }
+}

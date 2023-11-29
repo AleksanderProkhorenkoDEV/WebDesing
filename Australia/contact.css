@@ -1,0 +1,506 @@
+/*
+
+    PERSONALIZAMOS EL HERO
+
+*/
+.hero {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+}
+
+.cabecera {
+    height: 10vh;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    flex: 0 0 20%;
+    padding-left: 2rem;
+
+    background-image: url(img/logo-borderNegro.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.menu {
+    flex: 0 0 50%;
+    padding-right: 2rem;
+}
+
+.itemnav {
+    color: black;
+}
+
+.rutas-imagen {
+    height: 83vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-hero {
+    height: 100%;
+    width: 90%;
+
+    background-image: url(img/oficina-contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/*
+
+    ESTILOS SECCION CONTACT
+
+*/
+.contact {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-datos {
+    display: flex;
+    flex-wrap: nowrap;
+
+    padding: 2rem;
+}
+
+.contact-informacion {
+    border-right: 1px solid black;
+    flex: 1 0 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.contact-formulario {
+    flex: 1 0 48%;
+}
+
+.contact-formulario form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.contact-movil,
+.contact-mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.contact-icono-movil {
+    position: relative;
+
+    font-weight: 600;
+}
+
+.contact-icono-email {
+    position: relative;
+
+    font-weight: 600;
+}
+
+.contact-icono-movil::before {
+    content: "";
+
+    position: absolute;
+    left: -35%;
+    bottom: 20%;
+    width: 15px;
+    height: 15px;
+
+    background-image: url(img/phone-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.contact-icono-email::before {
+    content: "";
+
+    position: absolute;
+    left: -35%;
+    bottom: 20%;
+    width: 15px;
+    height: 15px;
+
+    background-image: url(img/Email.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+}
+
+/*
+
+    GEOLOCALIZACION CONTACT
+
+*/
+.geolocalizacion-contact {
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contenedor-gps {
+    width: 100%;
+    height: 100%;
+}
+
+/*
+
+    ESTILOS CARTAS HOVER
+
+*/
+.contenido-cartas {
+    width: 100%;
+}
+
+.contenedor-cartas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+.carta {
+    width: 500px;
+    height: 400px;
+
+    position: relative;
+}
+
+.carta img {
+    width: 500px;
+    height: 400px;
+}
+
+.contenido {
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.titulo-oficina {
+    font-weight: var(--regular);
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.texto-oficina {
+    display: none;
+}
+
+.carta:hover .contenido {
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+.carta:hover .texto-oficina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*
+
+    GEOLOCALIZACION OFICINAS
+
+*/
+
+.geolocalizacion-oficinas {
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+/*
+
+    FICHAS HOTELES
+
+*/
+.carta-hoteles {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/*
+
+    ESTILO FORMULARIO
+
+*/
+input {
+    all: unset;
+}
+
+label {
+    color: var(--azulClaro);
+}
+
+input[type="text"] {
+    padding: .5rem;
+    border: 1px solid var(--azulClaro);
+}
+
+input[type="submit"] {
+    text-align: center;
+}
+
+.bar {
+    background-color: black !important;
+}
+
+@media screen and (max-width:1600px) {
+    .nombre-hotel {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .imagen-hotel img {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .carta-hoteles {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .ficha {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .contact-informacion {
+        flex: 1 0 38%;
+    }
+
+    .ficha {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .contact-datos {
+        flex-direction: column;
+    }
+
+    .contact-informacion {
+        border-right: 0;
+        border-bottom: 1px solid black;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-mail,
+    .contact-movil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .footer-item1 {
+        height: auto;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .imgOpera {
+        display: none;
+    }
+
+    .borde {
+        width: 30% !important;
+    }
+
+    .gmail::before {
+        left: 37%;
+        top: 30%;
+    }
+
+    .facebok::before {
+        left: 37%;
+        top: 69%;
+    }
+
+    .insta::before {
+        left: 37%;
+        top: 50%;
+    }
+
+    .telefono::before {
+        left: 35%;
+    }
+
+    .email::before {
+        left: 30%;
+        top: 83%
+    }
+
+    .copy {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen-hero {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .carta {
+        width: 400px;
+        height: 300px;
+
+    }
+
+    .carta img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .contenido {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .carta {
+        width: 300px;
+        height: 200px;
+
+    }
+
+    .carta img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .contenido {
+        width: 300px;
+    }
+
+    .ficha {
+        width: 80%;
+    }
+
+    .imagen-hotel img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .gmail::before {
+        left: 34%;
+        top: 30%;
+    }
+
+    .facebok::before {
+        left: 34%;
+        top: 658;
+    }
+
+    .insta::before {
+        left: 34%;
+        top: 50%;
+    }
+
+    .telefono::before {
+        left: 30%;
+    }
+
+    .email::before {
+        left: 25%;
+    }
+
+    .titulo-oficina {
+        padding: .8rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .email::before {
+        left: 23%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .gmail::before {
+        left: 28%;
+        top: 30%;
+    }
+
+    .facebok::before {
+        left: 28%;
+        top: 70%;
+    }
+
+    .insta::before {
+        left: 28%;
+        top: 50%;
+    }
+
+    .telefono::before {
+        left: 28%;
+    }
+
+    .email::before {
+        left: 20%;
+    }
+}

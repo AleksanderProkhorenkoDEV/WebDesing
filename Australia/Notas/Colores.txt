@@ -1,0 +1,11 @@
+Tipografia:
+
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;900&display=swap');
+
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+Colores:
+
+BF8D30 dorado
+4C839D azul australia
+253C59 azul oscuro
+#00008B azul bandera

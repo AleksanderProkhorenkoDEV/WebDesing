@@ -1,0 +1,547 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,900;1,600&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+:root {
+  /* TAMAÑO TIPOGRAFIAS */
+  --titulosImagen: clamp(3rem, 2rem + 3.333vw, 6rem);
+  --titulosSecciones: clamp(1.5rem, 1.167rem + 1.111vw, 2.5rem);
+  --tamañoMain: clamp(1rem, 0.786rem + 0.571vw, 1.3rem);
+  --tituloCabecera: clamp(1.3rem, 1.067rem + 0.778vw, 2rem);
+
+  /*PERO DE LA TIPOGRAFIA*/
+  --bold: 900;
+  --semiboldItalic: 600;
+  --regular: 400;
+  --light: 200;
+
+  /*COLORES*/
+  --azulMain: #00008b;
+  --blanco: #ffff;
+  --azulClaro: #4c839d;
+  --azulFooter: #253c59;
+  --dorado: #bf8d30;
+
+
+  /*COLORES SLIDER*/
+  --borde-activo: #d9b70d;
+  --borde-inactivo: black;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--tamañoMain);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+strong {
+  color: var(--dorado);
+}
+/*
+    Personalizamos el nav
+*/
+.nav {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+}
+.itemnav {
+  text-decoration: none;
+  color: white;
+}
+/*
+
+  CABECERA SECCION
+
+*/
+
+.cabecera-seccion {
+  width: 50%;
+  height: 5vh;
+  margin-top: 2rem;
+  padding-left: 2rem;
+
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  display: flex;
+  align-items: center;
+
+  font-size: var(--tituloCabecera);
+  font-style: italic;
+  font-weight: var(--regular);
+
+  background-color: var(--azulMain);
+  color: var(--blanco);
+}
+
+/*
+
+  SUBSECCION
+
+*/
+
+.titulo-subseccion {
+  font-weight: var(--regular);
+  font-size: var(--titulosSecciones);
+  font-style: italic;
+  color: var(--azulClaro);
+
+  padding-bottom: 2rem;
+}
+/*
+
+  FOOTER
+
+*/
+
+.footer {
+  height: 80vh;
+  width: 100%;
+  margin-top: 2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-top: 2rem;
+  background-color: var(--azulFooter);
+  color: white;
+
+  position: relative;
+}
+.footer-item1 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 30%;
+}
+.imgOpera {
+  width: 100%;
+  height: 70%;
+  background-image: url(img/OperaLinea.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/*
+  
+    ESTILOS INFORMACION
+  
+  */
+.navfooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+.navfooter h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.borde {
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+.menufooter {
+  list-style: none;
+  height: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.menufooter-socialmedia {
+  list-style: none;
+  height: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.navfooterItem {
+  text-decoration: none;
+  color: white;
+}
+.contact-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.contact-footer h2 {
+  border-bottom: 1px solid white;
+  width: 100%;
+  margin-bottom: 1.5rem;
+
+  text-align: center;
+}
+
+.activo {
+  color: var(--dorado);
+}
+/*
+  
+        ICONOS FOOTER
+  
+    */
+
+.gmail::before {
+  content: "";
+
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  left: -20%;
+  top: 23%;
+
+  background-image: url(img/Email.svg);
+
+  opacity: 0.6;
+  color: gray;
+}
+.insta::before {
+  content: "";
+
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  left: -20%;
+  top: 35%;
+
+  background-image: url(img/instagram.svg);
+  background-repeat: no-repeat;
+
+  opacity: 0.6;
+  color: gray;
+}
+.facebok::before {
+  content: "";
+
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: 46%;
+  left: -20%;
+
+  background-image: url(img/facebook.svg);
+  background-repeat: no-repeat;
+
+  opacity: 0.6;
+  color: gray;
+}
+
+.telefono::before {
+  content: "";
+
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  left: 0%;
+
+  background-image: url(img/phone-solid.svg);
+  background-repeat: no-repeat;
+
+  opacity: 0.6;
+  color: gray;
+}
+.email::before {
+  content: "";
+
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  left: -15%;
+  top: 47%;
+
+
+  background-image: url(img/Email.svg);
+  background-repeat: no-repeat;
+
+  opacity: 0.6;
+  color: gray;
+}
+/*
+  
+    COPYRIGHT
+  
+  */
+
+.copy {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 1rem;
+
+  background-color: gray;
+}
+.parrafo {
+  position: relative;
+}
+.icono1::after {
+  content: "";
+
+  position: absolute;
+  height: 25px;
+  width: 25px;
+
+  background-image: url(img/facebook.svg);
+}
+.icono2::before {
+  content: "";
+
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  right: -40%;
+  top: 0;
+  background-image: url(img/Email.svg);
+}
+
+/*
+
+  ESTILO INPUTS HOTELES
+
+*/
+input[type="submit"] {
+  border: 1px solid #4c839d;
+  color: black;
+  background-color: transparent;
+
+  width: 100%;
+  padding: 0.5rem;
+
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+
+  font-family: "Montserrat", sans-serif;
+}
+input[type="submit"]:hover {
+  border: 1px solid white;
+  background-color: var(--dorado);
+  color: var(--blanco);
+}
+
+/*
+
+  RESET FIELDSET
+
+*/
+
+fieldset{
+  display: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  line-height: 1;
+  color: inherit;
+}
+
+/*
+
+  RESET BUTTOM
+
+*/
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  line-height: 1;
+  cursor: pointer;
+  background-color: transparent;
+}
+.itemnav{
+  transition: all 300ms ease-in-out;
+}
+.itemnav:hover{
+  color: var(--dorado);
+}
+.itemnav:hover::before{
+  content: "·";
+}
+
+.navfooterItem{
+  transition: all 300ms ease-in-out;
+}
+.navfooterItem:hover{
+  color: var(--dorado);
+}
+
+/*
+
+  FICHAS HOTELES
+
+*/
+.ficha {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+  background-color: #f2f2ec;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  border-radius: 4px;
+}
+
+.datos-hotel {
+  position: relative;
+  flex: 1;
+  width: 80%;
+}
+
+.indice-hotel {
+  color: var(--dorado);
+  font-weight: bold;
+}
+.nombre-hotel {
+  position: absolute;
+  top: 0;
+  left: 15%;
+}
+.imagen-hotel {
+  flex: 5;
+}
+.imagen-hotel img {
+  width: 400px;
+  height: 300px;
+}
+
+.slider {
+  height: 2vh;
+  width: 50%;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.buttom-slider {
+  height: 2px;
+  width: 25px;
+  border-radius: 2px;
+  background-color: black;
+
+  cursor: pointer;
+}
+
+.cta-hotel {
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-activo {
+  background-color: var(--dorado);
+}

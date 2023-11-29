@@ -1,0 +1,649 @@
+h3 {
+  padding: 0;
+}
+/*
+
+    PERSONALIZAMOS EL HERO
+
+*/
+.hero {
+  width: 100%;
+
+  position: relative;
+}
+.cabecera {
+  height: 10vh;
+
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  flex: 0 0 20%;
+  padding-left: 2rem;
+
+  background-image: url(img/logo-borderNegro.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.menu {
+  flex: 0 0 30%;
+  padding-right: 2rem;
+}
+.itemnav {
+  color: black;
+}
+
+/*
+
+    SLIDER DE IMAGENES
+
+*/
+.slider-img {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imagen {
+  flex: 8 ;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.fieldset img {
+  width: 80%;
+  max-height: 80%;
+}
+.oreja-derecha,
+.oreja-izquierda {
+  flex: 1 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.oreja-derecha img,
+.oreja-izquierda {
+  cursor: pointer;
+}
+.flecha-izquierda, .flecha-derecha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.campoActivo{
+  display: flex;
+}
+.campoActivo img{
+  width: 100%;
+}
+
+
+/*
+
+    INTRODUCCION VISA
+
+*/
+
+.planea-tu-viaje {
+  width: 100%;
+  height: 100%;
+}
+
+.plena-introduccion {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.planea-texto {
+  flex: 1 0 45%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.planea-imagen {
+  flex: 1 0 45%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.planea-imagen img {
+  width: 600px;
+  height: 400px;
+}
+
+/*
+
+    TIPOS DE VISA
+
+*/
+.tipo-visas {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.visas-titulo {
+  padding-left: 2rem;
+}
+
+.visas-texto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.lista-visas {
+  flex: 1 0 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+.visas-imagen {
+  flex: 1 0 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.indice-visa {
+  position: relative;
+}
+.indice-visa::after {
+  content: "·";
+
+  position: absolute;
+  left: -2%;
+}
+
+/*
+
+    LLEGAR CON AVION
+
+*/
+
+.llegada-avion {
+  width: 100%;
+  height: 100%;
+}
+.contenido-avion {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.informacion-avion {
+  flex: 1 0 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 5rem;
+}
+.imagen-avion {
+  flex: 1 0 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lista-avion {
+  padding-left: 2rem;
+}
+/*
+
+  Estilo palabra avion
+
+*/
+.letras-avion {
+  background: #ffffff;
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+
+ 
+}
+
+.texto-avion {
+  width: 100%;
+  color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12rem;
+  font-weight: bold;
+
+  background-image: url("img/Avion.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-attachment: fixed;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*
+
+    LLEGADA BARCO
+
+*/
+
+.llegada-barco {
+  width: 100%;
+  height: 100%;
+}
+.contenido-barco {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.informacion-barco {
+  flex: 1 0 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-right: 6rem;
+}
+.imagen-barco {
+  flex: 1 0 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen-barco img {
+  width: 600px;
+  height: 400px;
+}
+.lista-barco {
+  padding-left: 2rem;
+}
+/*
+  
+    Estilo palabra avion
+  
+*/
+.letras-barco {
+  background: #ffffff;
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  
+}
+
+.texto-barco {
+  width: 100%;
+  color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12rem;
+  font-weight: bold;
+
+  background-image: url("img/Crucero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-attachment: fixed;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*
+
+    DONDE QUEDARSE
+
+*/
+.donde-alojamiento {
+  width: 100%;
+  height: 100%;
+}
+
+.informacion-alojamiento {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+.texto-alojamiento,
+.imagen-alojamiento {
+  flex: 1 0 45%;
+}
+.texto-alojamiento {
+  padding-left: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.imagen-alojamiento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen-alojamiento img {
+  width: 600px;
+  height: 400px;
+}
+
+/*
+
+    INTRODUCCION A LOS RESORTES
+
+*/
+.imagen-introduccion-resorts {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-resort {
+  width: 90%;
+  height: 90%;
+
+  position: relative;
+
+  background-image: url(img/Resort2-howtocome.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.titulo-resort {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+
+  font-size: var(--titulosImagen);
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  color: white;
+  font-style: italic;
+}
+
+/*
+
+    FICHAS HOTELES URBANOS Y RESORTS
+
+*/
+.fichas-hoteles {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+
+/*
+
+  INTRODUCCION A LOS HOTELES
+
+*/
+
+.imagen-introduccion-hoteles {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-hoteles {
+  width: 90%;
+  height: 90%;
+
+  position: relative;
+
+  background-image: url(img/Hotel-urbano.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.titulo-hoteles {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+
+  font-size: var(--titulosImagen);
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  color: white;
+  font-style: italic;
+}
+
+.bar{
+  background-color: black !important;
+}
+
+/*
+
+  MEDIA QUERYS
+
+*/
+
+@media screen and (max-width: 1200px) {
+  .menu {
+    flex: 0 0 40%;
+  }
+  .planea-imagen{
+    padding-top: 2rem;
+  }
+  .imagen-avion img, .imagen-barco img, .imagen-alojamiento img{
+    width: 500px;
+    height: 350px;
+  }
+  .fichas-hoteles{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
+  .ficha{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:1000px){
+  .visas-texto{
+    flex-direction: column;
+  }
+  .imagen-avion img, .imagen-barco img, .imagen-alojamiento img{
+    width: 450px;
+    height: 300px;
+  }
+  .imagen-hoteles, .imagen-resort{
+    width: 100%;
+  }
+  .contenido-avion, .contenido-barco, .informacion-alojamiento{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .menu {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (max-width:800px){
+  .planea-imagen img{
+    width: 500px;
+    height: 300px;
+  }
+  .informacion-avion, .informacion-barco, .informacion-alojamiento{
+    padding: 2rem;
+  }
+}
+@media screen and (max-width:750px){
+  .ficha{
+    width: 80%;
+  }
+  .texto-avion, .texto-barco{
+    font-size: 8rem
+  }
+}
+@media screen and (max-width:600px){
+  .footer-item1 {
+    height: auto;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .imgOpera {
+    display: none;
+  }
+  .borde {
+    width: 30% !important;
+  }
+  .gmail::before {
+    left: 37%;
+    top: 30%;
+  }
+  .facebok::before {
+    left: 37%;
+    top: 69%;
+  }
+  .insta::before {
+    left: 37%;
+    top: 50%;
+  }
+  .telefono::before {
+    left: 35%;
+  }
+  .email::before {
+    left: 30%;
+    top:83%
+  }
+  .imagen-hotel img{
+    width: 350px;
+    height: 250px;
+  }
+  .texto-avion, .texto-barco{
+    font-size: 6rem;
+  }
+  .imagen-alojamiento img, .planea-imagen img{
+    width: 400px;
+    height: 250px;
+  }
+  .visas-texto{
+    padding: 0;
+  }
+  .nombre-hotel{
+    left: 25%;
+  }
+  .copy {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .texto-avion, .texto-barco{
+    -webkit-text-fill-color:var(--azulMain);
+    background-image: none;
+  }
+  .texto-alojamiento{
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+
+  .imagen-hotel img{
+    width: 300px;
+    height: 200px;
+  }
+  .nombre-hotel{
+    left: 20%;
+  }
+ 
+}
+@media screen and (max-width:480px){
+  
+  .gmail::before {
+    left: 34%;
+    top: 30%;
+  }
+  .facebok::before {
+    left: 34%;
+    top: 658;
+  }
+  .insta::before {
+    left: 34%;
+    top: 50%;
+  }
+  .telefono::before {
+    left: 30%;
+  }
+  .email::before {
+    left: 25%;
+  }
+  .imagen-hotel img{
+    width: 250px;
+    height: 150px;
+  }
+  .planea-imagen img, .visas-imagen img, .imagen-avion img, .imagen-barco img, .imagen-alojamiento img{
+     width: 350px;
+     height: 250px;
+  }
+  .nombre-hotel{
+    left: 28%;
+  }
+  .texto-alojamiento{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .email::before {
+    left: 23%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .gmail::before {
+    left: 28%;
+    top: 30%;
+  }
+  .facebok::before {
+    left: 28%;
+    top: 70%;
+  }
+  .insta::before {
+    left: 28%;
+    top: 50%;
+  }
+  .telefono::before {
+    left: 28%;
+  }
+  .email::before {
+    left: 20%;
+  }
+  .imagen-hotel img{
+    width: 200px;
+    height: 100px;
+  }
+  .planea-imagen img, .visas-imagen img, .imagen-avion img, .imagen-barco img, .imagen-alojamiento img{
+    width: 250px;
+    height: 150px;
+ }
+ .nombre-hotel{
+  left: 30%;
+}
+}

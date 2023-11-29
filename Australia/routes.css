@@ -1,0 +1,628 @@
+/*
+
+    PERSONALIZAMOS EL HERO
+
+*/
+.hero {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+}
+.cabecera {
+  height: 10vh;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  flex: 0 0 20%;
+  padding-left: 2rem;
+
+  background-image: url(img/logo-borderNegro.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.menu {
+  flex: 0 0 30%;
+  padding-right: 2rem;
+}
+.itemnav {
+  color: black;
+}
+.rutas-imagen {
+  height: 83vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen-hero {
+  height: 100%;
+  width: 90%;
+
+  background-image: url(img/Hero-rutas.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/*
+
+    INTRODUCCION RUTAS
+
+*/
+
+.introduccion-rutas {
+  width: 100%;
+  height: 100%;
+}
+.rutas-informacion {
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.rutas-texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding: 2rem 2rem 2rem 6rem;
+}
+.rutas-info-imagen {
+  padding: 2rem;
+
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rutas-info-imagen img {
+  width: 600px;
+  height: 700px;
+}
+
+/*
+
+    ESTILO PALABRA CULTURAL
+
+*/
+.letras-cultural {
+  background: #ffffff;
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+}
+
+.texto-cultural {
+  width: 100%;
+  color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12rem;
+  font-weight: bold;
+
+  background-image: url("img/gerogrificos.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-attachment: fixed;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*
+
+    RUTAS CULTURALES
+
+*/
+.ruta-cultural {
+  width: 100%;
+  height: 100%;
+
+}
+.texto-cultura-introduccion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 2rem;
+}
+.parrafo1,
+.parrafo2 {
+  flex: 1;
+  padding: 2rem;
+}
+/*
+
+    ESTILO PALABRA NATURAL
+
+*/
+.letras-natural {
+    background: #ffffff;
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .texto-natural {
+    width: 100%;
+    color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  
+    background-image: url("img/palabra-naturaleza.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: fixed;
+    background-clip: text;
+  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+/*
+
+    RUTAS NATURAL
+
+*/
+.ruta-natural {
+  width: 100%;
+  height: 100%;
+}
+.texto-natural-introduccion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.parrafo1,
+.parrafo2 {
+  flex: 1;
+  padding: 2rem;
+}
+/*
+
+  PALABRA AVENTURA
+
+*/
+.letras-aventura {
+  background: #ffffff;
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+}
+
+.texto-aventura {
+  width: 100%;
+  color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  background-image: url("img/Adventure-palabra.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-attachment: fixed;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*
+
+  RUTAS AVENTURA
+
+*/
+.ruta-aventura{
+  width: 100%;
+  height: 100%;
+}
+.texto-aventura-introduccion{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/*
+
+  PALABRA FAMILIAR
+
+*/
+.letras-familiar {
+  background: #ffffff;
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+}
+
+.texto-familiar {
+  width: 100%;
+  color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  background-image: url("img/Family.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-attachment: fixed;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*
+
+  ESTILO RUTA FAMILIAR
+
+*/
+.ruta-familiar{
+  width: 100%;
+  height: 100%;
+}
+.texto-familiar-introduccion{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+/*
+
+    ESTILO SLIDER
+
+*/
+
+fieldset {
+  display: none;
+}
+.campoActivo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 2rem;
+  
+}
+
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item1,
+.item2 {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.item2 p {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--tamañoMain);
+  text-align: justify;
+  padding-right: 2rem;
+}
+.titulo {
+  padding-bottom: 2rem;
+}
+/*
+    
+  Estilos barra progreso
+    
+*/
+.contenedor-progreso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lineaTiempo {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-width: 100%;
+  width: 350px;
+
+  position: relative;
+}
+
+.lineaTiempo::before {
+  content: "";
+  background-color: grey;
+  position: absolute;
+  width: 95%;
+  left: 0;
+  height: 4px;
+  top: 43%;
+  z-index: -1;
+}
+
+.progreso {
+  background-color: var(--borde-activo);
+  position: absolute;
+  top: 47%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.circulo {
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--borde-inactivo);
+  transition: 0.4s ease;
+}
+
+.activo {
+  border-color: var(--borde-activo);
+}
+/*
+    
+        ESTILO BOTONES
+    
+*/
+
+.bntBarraProgreso {
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn {
+  background-color: var(--borde-activo);
+  color: #000000;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+  transition: all 200ms ease-in-out;
+}
+.btn:hover{
+  border: 1px solid var(--borde-activo);
+  background-color: white;
+  transition: all 200ms ease-in-out;
+}
+.btn:active {
+  transform: scale(.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+.bar{
+  background-color: black !important;
+}
+.texto-cultural, .texto-aventura, .texto-familiar, .texto-natural{
+  font-size: clamp(4rem, 1.333rem + 8.889vw, 12rem);
+}
+/*
+
+  MEDIA QUERYS
+
+*/
+
+@media screen and (max-width:1600px){
+  .menu {
+    flex: 0 0 40%;
+  }
+  .item2 p{
+    padding-left: 2rem;
+  }
+  .item1 img{
+    width: 550px;
+    height: 350px;
+  }
+}
+@media screen and (max-width:1050px){
+  .menu {
+    flex: 0 0 50%;
+  }
+  .rutas-informacion{
+    flex-direction: column;
+    align-items: center;
+  }
+  .rutas-texto{
+    width: 80%;
+  }
+  .item1 img{
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width:900px){
+  .contenido{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .parrafo1, .parrafo2{
+    padding: 0;
+    width: 80%;
+  }
+  .texto-cultura-introduccion, .texto-aventura-introduccion, .texto-familiar-introduccion, .texto-natural-introduccion{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .rutas-info-imagen img{
+    width: 500px;
+    height: 600px;
+  }
+  .menu {
+    flex: 0 0 60%;
+  }
+}
+
+@media screen and (max-width:800px){
+  .rutas-info-imagen img{
+    width: 450px;
+    height: 550px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .footer-item1 {
+    height: auto;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .imgOpera {
+    display: none;
+  }
+  .borde {
+    width: 30% !important;
+  }
+  .gmail::before {
+    left: 37%;
+    top: 30%;
+  }
+  .facebok::before {
+    left: 37%;
+    top: 69%;
+  }
+  .insta::before {
+    left: 37%;
+    top: 50%;
+  }
+  .telefono::before {
+    left: 35%;
+  }
+  .email::before {
+    left: 30%;
+    top:83%
+  }
+  .copy {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .item1 img{
+    width: 450px;
+    height: 250px;
+  }
+  .texto-aventura, .texto-cultural, .texto-familiar, .texto-natural{
+    -webkit-text-fill-color:var(--azulMain);
+    background-image: none;
+  }
+  .rutas-texto{
+    padding-left: 2rem;
+  }
+}
+@media screen and (max-width:550px){
+  .item1 img{
+    width: 400px;
+    height: 200px;
+  }
+  .rutas-info-imagen img{
+    width: 400px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width:480px){
+  .gmail::before {
+    left: 34%;
+    top: 30%;
+  }
+  .facebok::before {
+    left: 34%;
+    top: 658;
+  }
+  .insta::before {
+    left: 34%;
+    top: 50%;
+  }
+  .telefono::before {
+    left: 30%;
+  }
+  .email::before {
+    left: 25%;
+  }
+  .rutas-info-imagen img{
+    width: 350px;
+    height: 450px;
+  }
+  .lineaTiempo{
+    width: 300px;
+  }
+  .item1 img{
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width:430px){
+  .rutas-info-imagen img{
+    width: 300px;
+    height: 400px;
+  }
+  .item2 p{
+    padding-left: 2rem;
+    width: 100%;
+  }
+  .texto-cultural, .texto-aventura, .texto-familiar, .texto-natural{
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .email::before {
+    left: 23%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .gmail::before {
+    left: 28%;
+    top: 30%;
+  }
+  .facebok::before {
+    left: 28%;
+    top: 70%;
+  }
+  .insta::before {
+    left: 28%;
+    top: 50%;
+  }
+  .telefono::before {
+    left: 28%;
+  }
+  .email::before {
+    left: 20%;
+  }
+}
