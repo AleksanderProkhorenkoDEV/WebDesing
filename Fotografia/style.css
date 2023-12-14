@@ -1,0 +1,1982 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap');
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,
+abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,
+strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,
+caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,
+footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {  
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ul, a, h1{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+strong{
+    color: var(--bugambilla);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'miracle';
+    src: url('assets/fonts/miracle_personal_use-webfont.woff2') format('woff2'),
+         url('assets/fonts/Miracle Personal use.otf') format('opentype'),
+         url('assets/fonts/miracle_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+:root{
+    /*
+        FUENTES TIPOGRAFICAS
+    */
+    --oswal:'Oswald', sans-serif;
+    --miracle: 'miracle';
+    /*
+        COLORES PRINCIPALES
+    */
+    --verde: #1C4C46 ;
+    --bugambilla: #6B112E;
+    /*
+        TAMAÑOS 
+    */
+    --tamañoMain: clamp(1.2rem, 1.16rem + 0.2vw, 1.4rem);
+    --tamañoNav: clamp(1rem, 0.92rem + 0.4vw, 1.4rem);
+    --tamañoTitulo: clamp(2rem, 1.88rem + 0.6vw, 2.6rem);
+    --tamañoTituloSeccion: clamp(3rem, 2.8rem + 1vw, 4rem);
+    --tamañoTitulosFotosFullWidth: clamp(1rem, -0.4rem + 7vw, 8rem);
+    /*
+        PESOS TIPOGRAFICOS
+    */
+    --regular: 400;
+    --extraLigth:200;
+    --light:300;
+    --bold:900;
+
+    
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    font-size: var(--tamañoMain);
+    font-weight: var(--light);
+    text-align: justify;
+}
+
+/*
+
+    SECCION HERO
+
+*/
+.hero{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(assets/img/Hero-landinpage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 10vh;
+}
+
+.logo{
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 100%;
+}
+.Logo-nombre{
+    flex: 1;
+    color: white;
+}
+.imgLogo{
+    flex: 1;
+    height: 50%;
+    background-image: url(assets/icons/Logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.menu{
+    flex: 0 0 60%;
+
+    height: 100%;
+
+}
+.ul-nav{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.itemnav{
+    color: white;
+    font-size: var(--tamañoNav);
+    font-weight: var(--regular);
+}
+.rrss{
+    flex: 0 0 20%;
+    display: flex;
+    
+    height: 100%;
+}
+.ul-rrss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor-titulo{
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-header{
+    font-size: var(--tamañoTitulo);
+
+    color:white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    position: relative;
+}
+
+.titulo-header:before{
+    content: "";
+
+    position: absolute;
+    width: 5%;
+    height: 50%;
+
+    top: -15%;
+    left: -3%;
+
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.titulo-header:after{
+    content: "";
+
+    position: absolute;
+    width: 5%;
+    height: 50%;
+
+    bottom: -15%;
+    right: -3%;
+
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+
+/*
+
+    ESTILOS GENERICOS DE LOS ICONOS
+
+*/
+.icono-insta, .icono-linkedin, .icono-twiter, .icono-ubicacion{
+    width: 20px;
+    height: 20px;
+}
+
+/*
+
+    SECCION ABOUT ME
+
+*/
+
+.about-me{
+    width: 100%;
+    gap: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-about{
+    width: 100%;
+}
+.palabra-about{
+    padding-left: 2rem;
+    font-size: var(--tamañoTituloSeccion);
+    font-weight: var(--bold);
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+.palabra-me{
+    font-size: var(--tamañoTitulo);
+    font-weight: var(--bold);
+    color: black;
+}
+.item1{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.imagen1-about{
+    flex: 1 0 clamp(6.25rem, 3rem + 16.25vw, 22.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgAbout1{
+    width: clamp(6.25rem, 3rem + 16.25vw, 22.5rem);
+    height: clamp(6.25rem, 2.25rem + 20vw, 26.25rem);
+}
+.imagen2-about{
+    flex: 1 0 clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+    height: clamp(6.25rem, 2.5rem + 18.75vw, 25rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.imgAbout2{
+    width: clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+    height: clamp(6.25rem, 2.5rem + 18.75vw, 25rem);
+}
+.imagen2-about::before{
+    content: "";
+
+    position: absolute;
+    width: 7%;
+    height: 7%;
+
+    bottom: -8%;
+    right: 15%;
+
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+.imagen2-about::after{
+    content: "";
+
+    position: absolute;
+    width: 7%;
+    height: 7%;
+
+    top: -7%;
+    left: 15%;
+
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+.texto-about{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+
+    text-align: justify;
+}
+.titulo-texto-about{
+    font-weight: var(--regular);
+    font-size: var(--tamañoNav);
+}
+.item2{
+    width: 90%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*
+
+    QUE ME GUSTA FOTOGRAFIAR
+
+*/
+
+.gustos-fotografia{
+    margin-top: 2rem;
+    width: 100%;
+}
+.what-span{
+    font-size: var(--tamañoTituloSeccion);
+    font-weight: var(--bold);
+    text-transform: uppercase;
+}
+.gustos-titulo-seccion{
+    padding: 2rem;
+
+    font-size: var(--tamañoTitulo);
+    font-weight: var(--extraLigth);
+
+}
+
+.moda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: 100%;
+}
+.imagen-moda {
+    flex: 0 0 clamp(6.25rem, 3.15rem + 15.5vw, 21.75rem);
+    height: clamp(6.25rem, -2.5rem + 43.75vw, 50rem);
+
+    background-image: url(assets/img/home-moda.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.titulo-cartel-moda {
+    position: absolute;
+
+    top: -5.5%;
+    right: -10%;
+    background-color: white;
+
+    font-family: var(--miracle);
+    font-size: var(--tamañoTituloSeccion);
+}
+
+.nombre-fotografo {
+    position: absolute;
+    bottom: 0;
+    right: -12%;
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+}
+
+.negrita{
+    font-weight: 600;
+}
+.contenedor-marcos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-hueco{
+    width: clamp(6.25rem, 1.25rem + 25vw, 31.25rem);
+    height: clamp(6.25rem, 4.375rem + 9.375vw, 15.625rem);
+
+    position: relative;
+
+    background-color: var(--verde);
+}
+.contenedor-lleno{
+    width: clamp(6.25rem, 1.25rem + 25vw, 31.25rem);
+    height: clamp(6.25rem, 4.375rem + 9.375vw, 15.625rem);
+
+    border: 1px solid black;
+    background-color: white;
+
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-lleno p{
+    width: 80%;
+}
+
+/*
+
+    SECCION FULL WIDTH VERDE
+
+*/
+
+.seccion-verde-fotografia{
+    width: 100%;
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--verde);
+}
+
+.gustos-titulo-seccion-verde{
+    width: 100%;
+    padding:2rem;
+
+    color: white;
+    font-size: var(--tamañoTitulo);
+    font-weight: var(--extraLigth);
+}
+.what-span-verde{
+    font-size: var(--tamañoTituloSeccion);
+    font-weight: var(--bold);
+    text-transform: uppercase;
+}
+
+.linea-esquinas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    width: 90%;
+
+    position: relative;
+}
+.linea-esquinas::after{
+    content: " ";
+
+    position: absolute;
+
+    width: 20%;
+    height: 50%;
+    bottom: -5%;
+    left: -3%;
+
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.imagen-lateral1, .imagen-lateral2{
+    flex: 1;
+    height: clamp(6.25rem, -1.25rem + 37.5vw, 43.75rem);
+}
+.imagen-lateral1{
+    background-image: url(assets/img/HOME2-MODA.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.imagen-central{
+    background-image: url(assets/img/HOM2-IMG-CENTRO.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.imagen-lateral2{
+    background-image: url(assets/img/HOM2-IMG-DRC.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.imagen-central{
+    flex: 2;
+    height: clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+}
+.imagenes-verde{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    gap: 1rem;
+}
+
+.parrafo-verde{
+    color: white;
+}
+
+/*
+
+    AURORA BOREAL
+
+*/
+
+.seccion-aurora{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-aurora{
+    width: 90%;
+    height: 90%;
+
+
+    background-image: url(assets/img/aurora-fullwidth.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+.imagen-aurora::after{
+    content: " ";
+
+    position: absolute;
+
+    width: 15%;
+    height: 25%;
+    top: 5%;
+    left: 5%;
+
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.contenido-imagen{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 15rem;
+}
+
+.titulo-aurora{
+    text-align: center;
+
+    font-size: var(--tamañoTitulosFotosFullWidth);
+    font-weight: var(--bold);
+    color: white;
+}
+.boreal{
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+.estilo-parrafos-aurora{
+    width: 50%;
+    padding: 2rem;
+
+    font-weight: var(--regular);
+
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*
+
+    CARTA AURORA BOREAL
+
+*/
+
+.aurora{
+    width: 100%;
+}
+.aurora-boreal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: 100%;
+}
+
+.contenedor-marcos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-coloreado{
+    width: clamp(6.25rem, 1.25rem + 25vw, 31.25rem);
+    height: clamp(6.25rem, 4.375rem + 9.375vw, 15.625rem);
+
+    background-color: white;
+    border: 1px solid black;
+
+    position: relative;
+}
+.contenedor-vacio{
+    width: clamp(6.25rem, 1.25rem + 25vw, 31.25rem);
+    height: clamp(6.25rem, 4.375rem + 9.375vw, 15.625rem);
+
+    position: absolute;
+
+    left: -10%;
+    top: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--verde);
+}
+
+.contenedor-vacio p{
+    width: 80%;
+    color: white;
+}
+
+.imagen-aurora-carta{
+    flex: 0 0 clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+    height: clamp(6.25rem, -2.5rem + 43.75vw, 50rem);
+
+    background-image: url(assets/img/aurora-Cartel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+}
+.titulo-carta-aurora{
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+
+    background-color: white;
+
+    font-size: var(--tamañoTituloSeccion);
+    font-family: var(--miracle);
+
+    position: absolute;
+    right: -5%;
+    top: -2%;
+
+}
+
+.nombre-fotografo-aurora{
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+
+    position: absolute;
+
+    bottom: 0;
+    left: -8%;
+}
+
+/*
+
+    FULL WIDTH PROYECTOS
+
+*/
+
+.seccion-proyectos{
+    width: 100%;
+    height: 100vh;
+
+    margin-top: 2rem;
+    
+    background-image: url(assets/img/Brocha-bugambilla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.seccion-proyectos::after{
+    content: " ";
+
+    position: absolute;
+
+    width: 25%;
+    height: 35%;
+    bottom: 5%;
+    right:5% ;
+
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.titulo-proyectos{
+    color: white;
+    font-size: var(--tamañoTitulosFotosFullWidth);
+    font-weight: var(--bold);
+}
+.proyectos{
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+
+/*
+
+    CARTAS FASHION
+
+*/
+
+.cartas-fashion{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 2rem;
+
+    justify-content: space-around;
+}
+.carta{
+    position: relative;
+    flex: 0 0 clamp(6.25rem, 1.25rem + 25vw, 31.25rem);
+    height: clamp(6.25rem, -3.75rem + 50vw, 56.25rem); 
+    overflow: hidden;
+
+    cursor: pointer;
+}
+.carta img{
+    flex: 0 0 clamp(6.25rem, 1.25rem + 25vw, 31.25rem);
+    height: clamp(6.25rem, -3.75rem + 50vw, 56.25rem); 
+}
+.panel-opaco{
+    position: absolute;
+    background-color: rgba(0,0,0,.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transition: all 300ms ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carta:hover .panel-opaco{
+    opacity: 0;
+}
+
+.titulo-carta{
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    
+    font-size: var(--tamañoTituloSeccion);
+    font-weight: var(--bold);
+    padding-top: 1rem;
+}
+.titulo-carta-nombre{
+    color: white;
+    
+    font-size: var(--tamañoTitulo);
+    font-weight: var(--regular);
+    padding-top: 1rem;
+}
+.pie-carta{
+    color: white;
+    padding-bottom: 1rem;
+}
+.titulo-esquinas{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.negrita-carta{
+    font-weight: var(--regular);
+}
+
+/*
+
+    CONTENIDO VERSATILIDAD Y ESENCIA
+
+*/
+.descripcion-tema{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 4rem;
+    padding-left: 2rem;
+}
+.descripcion-tema2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 4rem;
+    padding-right: 2rem;
+}
+.imagen-tema{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.estilo-imagen-tema{
+    position: relative;
+}
+.estilo-imagen-tema img{
+    width: clamp(6.25rem, -3.75rem + 50vw, 56.25rem);
+    height: clamp(6.25rem, 0.412rem + 29.188vw, 35.438rem);
+}
+.rrss-tema{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    cursor: pointer;
+}
+
+.titulo-cartel-tema{
+    position: absolute;
+    top: -5%;
+    left: -5%;
+
+    font-size: var(--tamañoTituloSeccion);
+    font-family: var(--miracle);
+    
+    background-color: white;
+}
+.titulo-cartel-tema-aurora{
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    position: absolute;
+    top: -5%;
+    right: -4%;
+
+    font-size: var(--tamañoTituloSeccion);
+    font-family: var(--miracle);
+    
+    background-color: white;
+}
+.contenido-tema{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.contenido-tema-aurora{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.texto-tema{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.texto-tema-aurora{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    text-align: right;
+}
+.cta-tema{
+    width: fit-content;
+    padding: .2rem;
+    gap:.3rem;
+
+    display: flex;
+
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+
+    border: 1px solid var(--bugambilla);
+}
+
+.cta-tema:hover{
+   background-color: var(--bugambilla);
+   border-radius: 2px;
+   
+   color: white;
+}
+
+/*
+
+    GALERIA PROYECTOS
+
+*/
+.galeria{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgRetrato{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.miniImagenes{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.cartaImg{
+    min-width:350px;
+    height: 40%;
+
+    position: relative;
+    cursor: pointer;
+}
+.tmñImg{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+.palabra{
+    padding-left: 2rem;
+    width: 50%;
+    height: 10%;
+    background-color: black;
+    color: white;
+}
+
+.img1{
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/img/fotoRosas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img2{
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/img/fotoBoda.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img3{
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/img/Fotografo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img4{
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/img/fotografo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.panel-negro-mini{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    transition: all 300ms ease-in-out;
+}
+.panel-negro-mini:hover {
+    opacity: 0;
+}
+
+.imgGrande{
+    width: 100%;
+    height: 95%;
+    
+}
+.cartaImgRetrato{
+    width: 50%;
+    height: 70%;
+
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.panel-negro{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 95%;
+    background-color: rgba(0,0,0,.6);
+    transition: all 300ms ease-in-out;
+}
+.panel-negro:hover {
+    opacity: 0;
+}
+.palabraGrande{
+    width: 50%;
+    background-color: black;
+    color: white;
+    height: 5%;
+    padding-left: 2rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.img5{
+    
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/img/Retratol.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.seccion-cta-galeria{
+    padding: 2rem;
+
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*
+
+    PORFOLIO
+
+*/
+
+.porfolio{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgPorfolio{
+    width: 90%;
+    height: 90%;
+    background-image: url(assets/img/fullWidth-Buttom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.titulo-porfolio{
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+
+    font-size: var(--tamañoTitulosFotosFullWidth);
+    font-weight: var(--bold);
+}
+
+.imgPorfolio::after{
+    content: " ";
+
+    position: absolute;
+
+    width: 25%;
+    height: 35%;
+    bottom: 5%;
+    right:5% ;
+
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.imgPorfolio::before{
+    content: " ";
+
+    position: absolute;
+
+    width: 25%;
+    height: 35%;
+    top: 5%;
+    left:5% ;
+
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+
+/*
+
+    PROYECTOS DEL PORFOLIO
+
+*/
+
+.proyectos-porfolio{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.columna-texto{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 2rem;
+}
+.columna-img{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.panel-opaco-portfolio{
+    background-color: rgba(0, 0, 0, 0.5);
+
+    width: clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+    height: clamp(6.25rem, -3.75rem + 50vw, 56.25rem);
+
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+
+    transition: all 300ms ease-in-out;
+    
+    cursor: pointer;
+}
+
+.panel-opaco-portfolio:hover {
+    opacity: 0;
+}
+.titulo-panel-opaco{
+    font-weight: var(--regular);
+    font-size: var(--tamañoTitulo);
+
+    color: white;
+}
+.iconos-porfolio{
+    display: flex;
+    gap: 2rem;
+}
+.cta-albu{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    gap: 1rem;
+}
+/*
+
+    PREMIOS
+
+*/
+.premios{
+    margin-top: 4rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.mis-premios{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+.imagen-premios{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 8rem;
+}
+
+.titulo-premios{
+    width: 90%;
+
+    font-size: var(--tamañoTituloSeccion);
+    font-weight: var(--bold);
+    text-transform: uppercase;
+
+}
+.adwars-premio{
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+
+    font-size: var(--tamañoTitulo);
+}
+.lista-premios{
+    width: 60%;
+}
+.parrafo-premios{
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 2rem;
+}
+.contenedor-borde{
+    border: 1px solid black;
+    width: clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+    height: clamp(6.25rem, -3.75rem + 50vw, 56.25rem);
+
+    position: relative;
+}
+.imagen-rellena{
+    width: clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+    height: clamp(6.25rem, -3.75rem + 50vw, 56.25rem);
+
+    position: absolute;
+
+    left: -7%;
+    bottom: -7%;
+
+}
+.img-premio-rellena{
+    width: clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+    height: clamp(6.25rem, -3.75rem + 50vw, 56.25rem);
+}
+.proyecto-portfolio-img{
+    width: clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+    height: clamp(6.25rem, -3.75rem + 50vw, 56.25rem);
+}
+.img-premio{
+    width: clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+    height: clamp(6.25rem, -3.75rem + 50vw, 56.25rem);
+}
+.pie-premio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+
+    cursor: pointer;
+}
+
+/*
+
+    BANDA PUBLICIDAD
+
+*/
+.banda-publicidad{
+    margin-top: 2rem;
+    
+    background-color: var(--verde);
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.texto-banda-publicidad{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+.texto-banda-publicidad p{
+    width: 80%;
+    color: white;
+}
+.imagen-banda-publicidad{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-banda-publicidad img{
+    width: clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+    height: clamp(6.25rem, 2.5rem + 18.75vw, 25rem);
+}
+
+/*
+
+    GALERIA PORFOLIO
+
+*/
+
+.galeria-trabajo{
+    width: 100%;
+
+}
+
+.titulo-galeria{
+    text-transform: uppercase;
+    font-size: var(--tamañoTituloSeccion);
+    font-weight: var(--bold);
+
+    padding-left: 2rem;
+    margin: 2rem;
+}
+.galeria-premio{
+    font-size: var(--tamañoTitulo);
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+.contenedor-galeria{
+    width: 100%;
+    margin:auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fila, .fila2{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-galeria{
+    flex: 0 0 clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+    display: flex;
+    justify-content: end;
+
+    position: relative;
+
+    cursor: pointer;
+}
+.imagen-galeria img{
+    width: clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+    height: clamp(6.25rem, -3.75rem + 50vw, 56.25rem);
+}
+.imagen-galeria2 img{
+    width: clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+    height: clamp(6.25rem, -3.75rem + 50vw, 56.25rem);
+}
+.contenido-galeria{
+    flex: 0 0 clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    gap: 2rem;
+}
+.contenido-galeria  h2{
+    width: 80%;
+    margin-left: 3rem;
+
+    font-size: var(--tamañoTitulo);
+    font-family: var(--miracle);
+}
+.contenido-galeria  p{
+    width: 80%;
+    margin-left: 3rem;
+}
+.contenido-galeria2{
+    flex: 0 0 clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+
+    gap: 2rem;
+}
+.contenido-galeria2  h2{
+    width: 80%;
+    margin-right: 3rem;
+    text-align: end;
+
+    font-size: var(--tamañoTitulo);
+    font-family: var(--miracle);
+}
+.contenido-galeria2  p{
+    width: 80%;
+    margin-right: 3rem;
+
+    text-align: right;
+}
+
+
+.imagen-galeria2{
+    flex: 0 0 clamp(6.25rem, 0rem + 31.25vw, 37.5rem);
+    display: flex;
+    justify-content: start;
+
+    position: relative;
+    cursor: pointer;
+}
+
+.panel-negro-galeria{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 300ms ease-in-out;
+}
+
+.imagen-galeria:hover  .panel-negro-galeria{
+    opacity: 0;
+}
+.imagen-galeria2:hover .panel-negro-galeria{
+    opacity:0;
+}
+
+/*
+
+    CONTACT
+
+*/
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    margin-top: 4rem;
+
+    background-image: url(assets/img/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linea-marco{
+    width: 80%;
+    height: 80%;
+
+    position: relative;
+}
+.linea-marco::after{
+    content: " ";
+
+    position: absolute;
+
+    width: 25%;
+    height: 35%;
+    bottom: 0%;
+    right:0%;
+
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.titulo-contact{
+    font-size: var(--tamañoTitulosFotosFullWidth);
+    font-weight: var(--bold);
+
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+
+    text-align: center;
+}
+
+/*
+
+    FORMULARIO
+
+*/
+
+.form-contact{
+    width: 100%;
+
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-titulo{
+    width: 70%;
+    margin-bottom: 2rem;
+
+    font-size: var(--tamañoTitulo);
+}
+
+/*
+
+    ESTILOS DE MI INFORMACION
+
+*/
+.mi-informacion{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.informacion-titulo{
+    width: 70%;
+    margin-bottom: 2rem;
+
+    font-size: var(--tamañoTitulo);
+}
+.lista-contact{
+    display: flex;
+    flex-direction: column;
+
+    gap:2rem;
+}
+.rrsss-contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: 1rem;
+
+    cursor: pointer;
+}
+
+/*
+
+    UBICACION ESTUDIO
+
+*/
+.ubicacion-estudio{
+    width: 100%;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.ubicacion-titulo{
+    width: 70%;
+
+    font-size: var(--tamañoTitulo);
+}
+/*
+
+    ESTILOS FOOTER
+
+*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 2rem;
+
+    padding: 2rem;
+
+    background-color: black;
+    color: white;
+}
+
+.resumen-sobre-me, .social-media-footer, .contact-footer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1rem;
+}
+.resumen-sobre-me p{
+    width: 80%;
+}
+
+.h2-footer{
+    color: white;
+    font-weight: var(--regular);
+}
+
+.copy{
+    background-color: grey;
+    color: black;
+    
+    width: 100%;
+
+    text-align: center;
+}
+/*
+
+    ESTILOS FORMULARIO
+
+*/
+form {
+   display: flex;
+   flex-direction: column;
+
+   width: 50%;
+}
+input, textarea {
+    all: unset;
+    margin-bottom: 1rem;
+
+    border: 1px solid black;
+}
+input[type="submit"] {
+    border: 1px solid var(--bugambilla);
+
+    height: 3rem;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+
+input[type="submit"]:hover {
+   background-color: var(--bugambilla);
+   color: #ffff;
+
+   transition: all 300ms ease-in-out;
+}
+
+/*
+
+    MEDIA QUERYS
+
+*/
+
+@media screen and (max-width:1430px){
+    .cartaImgRetrato{
+        width: 100%;
+    }
+    .miniImagenes{
+        flex: 2;
+    }
+}
+@media screen and (max-width:1300px){
+    .titulo-cartel-moda, .titulo-carta-aurora{
+        font-size: var(--tamañoTitulo);
+    }
+
+    .contenedor-coloreado, .contenedor-vacio, .contenedor-hueco, .contenedor-lleno{
+        width: 348px;
+        height: 194px;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .galeria{
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    .cartaImgRetrato{
+        width: 50%;
+        height: 600px;
+    }
+    .miniImagenes{
+        flex: 1;
+        gap: 3rem;
+    }
+    .cartaImg{
+        height: 300px;
+    }
+    .proyectos-porfolio{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .columna-texto{
+        align-items: start;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .imgAbout1{
+        width: 210px;
+        height: 235px;
+    }
+    .imgAbout2, .imagen2-about{
+        width: 311px;
+        height: 227px;
+    }
+    .imagen-moda{
+        flex: 0 0 200px;
+        height: 400px;
+    }
+    .titulo-cartel-moda{
+        right:0%;
+    }
+    .nombre-fotografo{
+        right: 0;
+    }
+    .imagen-aurora-carta{
+        flex: 0 0 310px;
+        height: 400px;
+        margin-right: 2rem;
+    }
+    .contenedor-marcos{
+        margin-right: 2rem;
+    }
+    .carta{
+        flex: 0 0 268px;
+        height: 436px;
+    }
+    .carta img{
+        height: 436px;
+    }
+    .titulo-carta, .titulo-cartel-tema, .titulo-cartel-tema-aurora{
+        font-size: var(--tamañoTitulo);
+    }
+    .descripcion-tema, .descripcion-tema2{
+        flex-direction: column;
+        gap: 2rem;
+        padding-left: 0;
+    }
+    .estilo-imagen-tema{
+        width: 436px;
+        height: 296px;
+    }
+    .estilo-imagen-tema img{
+        width: 436px;
+        height: 296px;
+    }
+    .contenido-tema, .contenido-tema-aurora{
+        align-items: center;
+    }
+    .texto-tema-aurora{
+        text-align: justify;
+    }
+    .titulo-carta-nombre{
+        font-size: var(--tamañoNav);
+    }
+    .proyecto-portfolio-img, .panel-opaco-portfolio{
+        width: 312px;
+        height: 439px;
+    }
+    .img-premio, .imagen-rellena{
+        width: 312px;
+        height: 439px;
+    }
+    .imagen-galeria, .imagen-galeria img, .imagen-galeria2, .imagen-galeria2 img{
+        flex: 0 0 312px;
+        width: 312px;
+        height: 439px;
+    }
+    .contenedor-borde, .imagen-rellena, .img-premio-rellena, .img-premio{
+        width: 315px;
+        height: 442px;
+    }
+}
+
+@media screen and (max-width:980px){
+    .item1{
+        flex-direction: column;
+    }
+    .item2{
+        flex-direction: column-reverse;
+    }
+    .imagen2-about::before{
+        bottom: 0;
+        right: -10%;
+    }
+    .imagen2-about::after{
+        top: 0;
+        left: -10%;
+    }
+}
+
+@media screen and (max-width:850px){
+    .cartas-fashion{
+        gap: 2rem;
+    }
+    .premios{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .banda-publicidad{
+        flex-direction: column;
+    }
+    .texto-banda-publicidad{
+        margin-top: 2rem;
+    }
+
+    .fila{
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    .fila2{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .contenido-galeria2{
+        align-items: start;
+        margin-left: 2rem;
+        
+    }
+    
+    .contenido-galeria2 p{
+        text-align: justify;
+        margin-right: 0;
+    }
+    .h2-galeria2{
+        text-align: start !important;
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and (max-width:800px){
+    footer{
+        flex-direction: column;
+    }
+    .flecha-ascenso{
+        display: flex;
+        justify-content: end;
+    }
+    .moda, .aurora-boreal{
+        gap: 4rem;
+    }
+    .imagenes-verde{
+        width: 100%;
+        height: 80vh;
+        flex-direction: column;
+    }
+    .imagen-lateral1, .imagen-central, .imagen-lateral2{
+        width: 100%;
+    }
+    .imagen-central{
+        width: 50%;
+    }
+    .Logo-nombre{
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px){
+    .estilo-imagen-tema, .estilo-imagen-tema img{
+        width: 335px;
+        height: 219px;
+    }
+    .descripcion-tema, .descripcion-tema2{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .estilo-parrafos-aurora{
+        width: 80%;
+    }
+    .cartaImgRetrato{
+        width: 70%;
+    }
+    .seccion-cta-galeria{
+        flex-direction: column;
+    }
+    .titulo-header{
+        font-size: var(--tamañoMain);
+    }
+}
+
+@media screen and (max-width:480px){
+    .imagen2-about::before{
+        bottom: -5%;
+        right: -7%;
+    }
+    .imagen2-about::after{
+        top: -5%;
+        left: -7%;
+    }
+}
+@media screen and (max-width:430px){
+    
+    .contenedor-coloreado, .contenedor-vacio, .contenedor-hueco, .contenedor-lleno{
+        width: 300px;
+        height: 194px;
+    }
+    .imagen-aurora-carta{
+        flex: 0 0 250px;
+        height: 400px;
+        margin-right: 2rem;
+    }
+    .nombre-fotografo-aurora{
+        left: -16%;
+    }
+    .contenedor-marcos{
+        margin-right: 2rem;
+        margin-left: 4rem;
+    }
+    .carta{
+        flex: 0 0 200px;
+        height: 436px;
+    }
+    .carta img{
+        height: 436px;
+    }
+    .titulo-carta, .titulo-cartel-tema, .titulo-cartel-tema-aurora{
+        font-size: var(--tamañoTitulo);
+    }
+    .descripcion-tema, .descripcion-tema2{
+        flex-direction: column;
+        gap: 2rem;
+        padding-left: 0;
+    }
+    .estilo-imagen-tema{
+        width: 336px;
+        height: 240px;
+    }
+    .estilo-imagen-tema img{
+        width: 336px;
+        height: 240px;
+    }
+    .contenido-tema, .contenido-tema-aurora{
+        align-items: center;
+    }
+    .texto-tema-aurora{
+        text-align: justify;
+    }
+    .titulo-carta-nombre{
+        font-size: var(--tamañoNav);
+    }
+    .proyecto-portfolio-img, .panel-opaco-portfolio{
+        width: 250px;
+        height: 370px;
+    }
+    .img-premio, .imagen-rellena{
+        width: 250px;
+        height: 370px;
+    }
+    .imagen-galeria, .imagen-galeria img, .imagen-galeria2, .imagen-galeria2 img{
+        flex: 0 0 250px;
+        width: 250px;
+        height: 370px;
+    }
+    .contenedor-borde, .imagen-rellena, .img-premio-rellena, .img-premio{
+        width: 315px;
+        height: 442px;
+    }
+}
+@media screen and (max-width:400px){
+    .contenedor-marcos{
+        margin-right: 2rem;
+        margin-left: 1rem;
+    }
+}
