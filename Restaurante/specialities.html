@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Luxury Team - Our Specialities</title>
+        <link rel="stylesheet" href="menu-burger.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="specialities.css">
         
@@ -11,22 +12,33 @@
     <body>
         <div class="contenedor-global">
             <div class="contenedor-hero" id="home"> <!--SECCION HERO DE SPECIALITIES-->
-                <div class="header">
+                <header>
                     <div class="logo">
-                        
                     </div>
-                    <div class="navegacion">
-                        <ul class="navegacion-lista">
-                            <li><a href="index.html" class="itemnav">HOME</a></li>
-                            <li><a href="team.html" class="itemnav ">TEAM</a></li>
-                            <li><a href="specialities.html" class="itemnav activo">OUR SPECIALITIES</a></li>
-                            <li><a href="contact.html" class="itemnav">CONTACT</a></li>
+    
+                    <div class="menu">
+                        <!--
+                            This is the collapsed menu, where the bars are displayed
+                        -->
+                        <div class="colapsado esconder" id="menu-colapsado">
+                            <span class="linea"></span>
+                            <span class="linea"></span>
+                            <span class="linea"></span>
+                        </div>
+                        <!--
+                            This is the normal menu which is displayed in all screen dimensions up to 750px
+                        -->
+                        <ul class="lista-menu" id="menu-lista">
+                            <li><a href="index.html" class="itemnav ">HOME</a></li>
+                            <li ><a href="team.html" class="itemnav ">TEAM</a></li>
+                            <li ><a href="specialities.html" class="itemnav activo">SPECIALITIES</a></li>
+                            <li ><a href="contact.html" class="itemnav">CONTACT</a></li>
                         </ul>
                     </div>
-                </div>
+                </header>
                 <div class="imgHero">
                     <div class="marco">
-                        <div class="linea"></div>
+                        <div class="linea-marco"></div>
                     </div>
                 </div>
             </div>
@@ -36,7 +48,7 @@
                         <h4>Fugu</h4>
                     </div>
                     <div class="imgPlato">
-                        <img src="img/Specialities1.2.jpg" alt="un plato de forma ovalada con un trozo de pescado blanco con una piel gruesa y marron con una elipse de salsa a su alrededor">
+                        <img src="../img/Specialities1.2.jpg" alt="un plato de forma ovalada con un trozo de pescado blanco con una piel gruesa y marron con una elipse de salsa a su alrededor">
                     </div>
                     <div class="descripcion-plato">
                         <p>
@@ -50,7 +62,7 @@
                         <h4>Balut</h4>
                     </div>
                     <div class="imgPlato">
-                        <img src="img/Specialities1.1.jpg" alt="tallarines negros con una hoja verde encima sobre un plato blanco">
+                        <img src="../img/Specialities1.1.jpg" alt="tallarines negros con una hoja verde encima sobre un plato blanco">
                     </div>
                     <div class="descripcion-plato">
                         <p>
@@ -90,14 +102,14 @@
                         </p>
                     </div>
                     <div class="copa">
-                        <img src="img/CopaVino.png" alt="Una copa de vino transparente con un vino rojo intenso">
+                        <img src="../img/CopaVino.png" alt="Una copa de vino transparente con un vino rojo intenso">
                     </div>
                 </div>
             </div>
             <div class="seccion-botellas">
                     <div class="botella1">
                         <div class="imgBotella">
-                            <img src="img/Vino3.jpg" alt="Botella de vino 'Bruto'">
+                            <img src="../img/Vino3.jpg" alt="Botella de vino 'Bruto'">
                         </div>
                         <div class="parrafo-botella">
                             <p>
@@ -116,7 +128,7 @@
                             </p>
                         </div>
                         <div class="imgBotella">
-                            <img src="img/Vino4.jpg" alt="Botella de vino 'Viñas del rey'">
+                            <img src="../img/Vino4.jpg" alt="Botella de vino 'Viñas del rey'">
                         </div>
                     </div>
             </div>
@@ -127,7 +139,7 @@
                     </div>
                     <div class="carta">
                         <div class="imgCarta">
-                            <img src="img/platoo.png" alt="Plato negro sobre mesa de marmol negra, su contenido es una especie de concha que sujeta un trozo de pescado blanco">
+                            <img src="../img/platoo.png" alt="Plato negro sobre mesa de marmol negra, su contenido es una especie de concha que sujeta un trozo de pescado blanco">
                         </div>
                         <div class="platos-menu">
                             <h4 class="titulos-platos">Dishes</h4>
@@ -177,7 +189,7 @@
                     </div>
                     <div class="carta">
                         <div  class="imgCarta">
-                            <img src="img/Plato14.jpg" alt="tarta de queso con el exterior rosa cortada por la mitad por una fina lamina de galleta">
+                            <img src="../img/Plato14.jpg" alt="tarta de queso con el exterior rosa cortada por la mitad por una fina lamina de galleta">
                         </div>
                         <div class="platos-menu">
                             <h4 class="titulos-platos">Dishes</h4>
@@ -229,12 +241,12 @@
                     <h1>Catering</h1>
                 </div>
                 <div class=imgCatering>
-                    <img src="img/catering3.jpg" alt="Una mesa que sujeta diferentes tipos de platos y vasos con alimento de primera clase">
+                    <img src="../img/catering3.jpg" alt="Una mesa que sujeta diferentes tipos de platos y vasos con alimento de primera clase">
                 </div>             
             </div>
             <div class="informacion-catering">
                 <div class="imgCateringInformacion">
-                    <img src="img/cateringBodajpg.jpg" alt="Boda ibicenca con una mesa de mantel blanco sujetando platos con diferentes estilos de comidacirculo que contiene un flecha indicando ascenso">
+                    <img src="../img/cateringBodajpg.jpg" alt="Boda ibicenca con una mesa de mantel blanco sujetando platos con diferentes estilos de comidacirculo que contiene un flecha indicando ascenso">
                 </div>
                 <div class="parrafo-catering">
                     <p>
@@ -283,13 +295,13 @@
                         <div class="linea3"></div>
                         <div class="socialmedia">
                             <ul class="socialMediaNav">
-                                <li><a href=""><img src="img/instagram.png" alt="icono instagram"></a></li>
-                                <li><a href=""><img src="img/twiiter.png" alt="icono twitter"></a></li>
+                                <li><a href=""><img src="../img/instagram.png" alt="icono instagram"></a></li>
+                                <li><a href=""><img src="../img/twiiter.png" alt="icono twitter"></a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="footer4">
-                    <a href="#home"><img src="img/chevron70x70.svg" alt="circulo que contiene un flecha indicando ascenso"></a>
+                    <a href="#home"><img src="../img/chevron70x70.svg" alt="circulo que contiene un flecha indicando ascenso"></a>
                     </div>
                 </div>
                 <div class="copy">
@@ -297,5 +309,6 @@
                 </div>
             </div>
         </div>
+        <script src="script-menu.js"></script>
     </body>
 </html>

@@ -4,25 +4,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Luxury Restaurant - Team</title>
+        <link rel="stylesheet" href="menu-burger.css">
         <link rel="stylesheet" href="team.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="contenedor-global">
             <div class="contenedor-hero" id="home"> <!--SECCION HERO DE TEAM-->
-                <div class="header">
+                <header>
                     <div class="logo">
-                        <img src="" alt="">
                     </div>
-                    <div class="navegacion">
-                        <ul class="navegacion-lista">
-                            <li><a href="index.html" class="itemnav">HOME</a></li>
-                            <li><a href="team.html" class="itemnav activo">TEAM</a></li>
-                            <li><a href="specialities.html" class="itemnav">OUR SPECIALITIES</a></li>
-                            <li><a href="contact.html" class="itemnav">CONTACT</a></li>
+    
+                    <div class="menu">
+                        <!--
+                            This is the collapsed menu, where the bars are displayed
+                        -->
+                        <div class="colapsado esconder" id="menu-colapsado">
+                            <span class="linea"></span>
+                            <span class="linea"></span>
+                            <span class="linea"></span>
+                        </div>
+                        <!--
+                            This is the normal menu which is displayed in all screen dimensions up to 750px
+                        -->
+                        <ul class="lista-menu" id="menu-lista">
+                            <li><a href="index.html" class="itemnav ">HOME</a></li>
+                            <li ><a href="team.html" class="itemnav activo">TEAM</a></li>
+                            <li ><a href="specialities.html" class="itemnav">SPECIALITIES</a></li>
+                            <li ><a href="contact.html" class="itemnav">CONTACT</a></li>
                         </ul>
                     </div>
-                </div>
+                </header>
                 <div class="marco"> 
                     <div class="chefs">
                         <div class="tituloChefs">
@@ -30,7 +42,7 @@
                         </div>
                         <div class="chef1">
                             <div class="imgChef">
-                                <img src="img/Retrato1.jpg" alt="Se observaria el rostro de una mujer de pelo castaño con rostro serio">
+                                <img src="../img/Retrato1.jpg" alt="Se observaria el rostro de una mujer de pelo castaño con rostro serio">
                             </div>
                             <div class="textoChef">
                                 <p>Ferran Adrià</p>
@@ -38,7 +50,7 @@
                         </div>
                         <div class="chef2">
                            <div class="imgChef">
-                                <img src="img/Retrato2.jpg" alt="Se observaria el rostro de una mujer de pelo rubio con rostro alegre">
+                                <img src="../img/Retrato2.jpg" alt="Se observaria el rostro de una mujer de pelo rubio con rostro alegre">
                             </div>
                             <div class="textoChef">
                                 <p>Gordom Ramsay</p>
@@ -46,20 +58,20 @@
                         </div>
                         <div class="chef3">
                            <div class="imgChef">
-                                <img src="img/Retrato3.jpg" alt="Se observaria el rostro de un hombre con pelo corto y barba de una mediana edad">
+                                <img src="../img/Retrato3.jpg" alt="Se observaria el rostro de un hombre con pelo corto y barba de una mediana edad">
                             </div>
                             <div class="textoChef">
                                 <p>Julia Child</p>
                             </div>
                         </div>
                     </div>
-                    <div class="linea"></div>
+                    <div class="linea-marco"></div>
                 </div>
             </div>
             <div class="seccion-team1"> <!--SEGUNDA SECCION -->
                 <div class="team1">
                     <div class="imgTeam">
-                        <img src="img/Team.jpg" alt="Se observaria una cocina de alta clase con diferentes cocineros trabajando y un chef de mono blanco dando ordenes">
+                        <img src="../img/Team.jpg" alt="Se observaria una cocina de alta clase con diferentes cocineros trabajando y un chef de mono blanco dando ordenes">
                     </div>
                     <div class="texto-team1">
                         <div class="parrafo">
@@ -70,8 +82,8 @@
                         </div>
                         <div class="estrellas-michelin">
                             <ul class="lista-estrella">
-                                <li class="item1-estrella"><img src="img/estrella.png" alt="Icono de estrella michelin" class="imgEstrella"></li>
-                                <li class="item2-estrella"><img src="img/estrella.png" alt="Icono de estrella michelin" class="imgEstrella"></li>
+                                <li class="item1-estrella"><img src="../img/estrella.png" alt="Icono de estrella michelin" class="imgEstrella"></li>
+                                <li class="item2-estrella"><img src="../img/estrella.png" alt="Icono de estrella michelin" class="imgEstrella"></li>
                             </ul>
                         </div>
                     </div>
@@ -140,7 +152,7 @@
             <div class="seccion-cocina"> <!-- CUARTA SECCION -->
                 <div class="cocina">
                     <div class="imgCocina">
-                        <img src="img/Cocina.jpg" alt="Se observaria a un muchacho pelirrojo con delantal negro y camiseta blanca trabajando en la cocina con diferentes intrumentos">
+                        <img src="../img/Cocina.jpg" alt="Se observaria a un muchacho pelirrojo con delantal negro y camiseta blanca trabajando en la cocina con diferentes intrumentos">
                     </div>
                     <div class="parrafo-cocina">
                         <p>
@@ -160,7 +172,7 @@
                         </p>
                     </div>
                     <div class="imgPremios">
-                        <img src="img/Team2.jpg" alt="Se observaria una cocina de alta clase con diferentes cocineros trabajando y un chef de mono blanco dando ordenes">
+                        <img src="../img/Team2.jpg" alt="Se observaria una cocina de alta clase con diferentes cocineros trabajando y un chef de mono blanco dando ordenes">
                     </div>
                     <div class="parrafo-cierre">
                         <p>
@@ -169,13 +181,13 @@
                     </div>
                     <div class="iconos-premios">
                         <div class="guia-repsol">
-                            <img src="img/RepsolNueva.png" alt="Icono repsol 2021">
+                            <img src="../img/RepsolNueva.png" alt="Icono repsol 2021">
                         </div>
                         <div class="m22">
-                            <img src="img/Michelin23.png" alt="Estrella michelin 2023 icono">
+                            <img src="../img/Michelin23.png" alt="Estrella michelin 2023 icono">
                         </div>
                         <div class="m23">
-                            <img src="img/MichelinNueva.png" alt="Estrella michelin 2017 icono">
+                            <img src="../img/MichelinNueva.png" alt="Estrella michelin 2017 icono">
                         </div>
                     </div>
                 </div>
@@ -183,7 +195,7 @@
             <div class="secion-descripcion1"> <!--DESCRIPCION 1 -->
                 <div class="descripcion1">
                     <div class="imgDescripcion">
-                        <img src="img/600x400Team1.jpg" alt="Se veria un fondo negro con un plato rojizo con un salmon cubiero por una salsa roja con trozos de lechuga encima">
+                        <img src="../img/600x400Team1.jpg" alt="Se veria un fondo negro con un plato rojizo con un salmon cubiero por una salsa roja con trozos de lechuga encima">
                     </div>
                     <div class="parrafo-descripcion">
                         <h3 class="titulo-descripcion">Tourneados Rossini</h3>
@@ -200,7 +212,7 @@
             <div  class="secion-descripcion2"> <!--DESCRIPCION 2 -->
                 <div class="descripcion2">
                     <div class="imgDescripcion">
-                        <img src="img/600x400Team3.jpg" alt="se veria una tabla de madera sobre un fondo blanco con un bollo de pan y un trozo de carne gordo con decoracioes">
+                        <img src="../img/600x400Team3.jpg" alt="se veria una tabla de madera sobre un fondo blanco con un bollo de pan y un trozo de carne gordo con decoracioes">
                     </div>
                     <div class="parrafo-descripcion">
                         <h3 class="titulo-descripcion">Juicy Bliss Steak Delight</h3>
@@ -215,7 +227,7 @@
             <div  class="secion-descripcion3"> <!--DESCRIPCION 3 -->
                 <div class="descripcion3">
                     <div class="imgDescripcion">
-                        <img src="img/600x400Team2.jpg" alt="Un plato de pescado blanco en forma de cilindro que sujeta en su parte superior pequeños gisantes ">
+                        <img src="../img/600x400Team2.jpg" alt="Un plato de pescado blanco en forma de cilindro que sujeta en su parte superior pequeños gisantes ">
                     </div>
                     <div class="parrafo-descripcion">
                         <h3 class="titulo-descripcion">Tourneados Rossini</h3>
@@ -234,16 +246,16 @@
                         </div>
                         <div class="estrellas-recomendaciones">
                             <ul class="lista-estrella-recomendaciones">
-                                <li class="item1-estrella-recomendaciones"><img src="img/estrella.png" alt="Icono estrella michelin" class="imgEstrella"></li>
-                                <li class="item2-estrella-recomendaciones"><img src="img/estrella.png" alt="Icono estrella michelin" class="imgEstrella"></li>
+                                <li class="item1-estrella-recomendaciones"><img src="../img/estrella.png" alt="Icono estrella michelin" class="imgEstrella"></li>
+                                <li class="item2-estrella-recomendaciones"><img src="../img/estrella.png" alt="Icono estrella michelin" class="imgEstrella"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="fichas">
                         <div class="ficha">
                             <ul class="iconos-comillas">
-                                <li class="icono1"><img src="img/Coma.png" alt="Comilla"></li>
-                                <li class="icono2"><img src="img/Coma.png" alt="Comilla"></li>
+                                <li class="icono1"><img src="../img/Coma.png" alt="Comilla"></li>
+                                <li class="icono2"><img src="../img/Coma.png" alt="Comilla"></li>
                             </ul>
                             <h3 class="nombre-plato">Herb-Crusted Lamb Loin:</h3>
                             <p class="pararfo-ficha">
@@ -255,8 +267,8 @@
                         </div>
                         <div class="ficha">
                             <ul class="iconos-comillas">
-                                <li class="icono1"><img src="img/Coma.png" alt="Comilla"></li>
-                                <li class="icono2"><img src="img/Coma.png" alt="Comilla"></li>
+                                <li class="icono1"><img src="../img/Coma.png" alt="Comilla"></li>
+                                <li class="icono2"><img src="../img/Coma.png" alt="Comilla"></li>
                             </ul>
                             <h3 class="nombre-plato">Seared Scallops with Citrus Glaze:</h3>
                             <p class="pararfo-ficha">
@@ -269,8 +281,8 @@
                         </div>
                         <div class="ficha">
                             <ul class="iconos-comillas">
-                                <li class="icono1"><img src="img/Coma.png" alt="Comilla"></li>
-                                <li class="icono2"><img src="img/Coma.png" alt="Comilla"></li>
+                                <li class="icono1"><img src="../img/Coma.png" alt="Comilla"></li>
+                                <li class="icono2"><img src="../img/Coma.png" alt="Comilla"></li>
                             </ul>
                             <h3 class="nombre-plato">Truffle Risotto with Parmesan Crisp:</h3>
                             <p class="pararfo-ficha">
@@ -312,13 +324,13 @@
                         <div class="linea3"></div>
                         <div class="socialmedia">
                             <ul class="socialMediaNav">
-                                <li><a href=""><img src="img/instagram.png" alt="icono instagram"></a></li>
-                                <li><a href=""><img src="img/twiiter.png" alt="icono twiiter"></a></li>
+                                <li><a href=""><img src="../img/instagram.png" alt="icono instagram"></a></li>
+                                <li><a href=""><img src="../img/twiiter.png" alt="icono twiiter"></a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="footer4">
-                        <a href="#home"><img src="img/chevron70x70.svg" alt="circulo que contiene un flecha indicando ascenso"></a>
+                        <a href="#home"><img src="../img/chevron70x70.svg" alt="circulo que contiene un flecha indicando ascenso"></a>
                     </div>
                 </div>
                 <div class="copy">
@@ -326,5 +338,6 @@
                 </div>
             </div>
         </div>
+        <script src="script-menu.js"></script>
     </body>
 </html>

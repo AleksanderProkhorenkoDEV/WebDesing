@@ -4,33 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxury Restaurant</title>
+    <link rel="stylesheet" href="menu-burger.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="container"> <!--Contenedor PRINCIPAL-->
         <div class="seccion-hero" id="home"> <!--PRIMER PANTALLAZO-->
-            <div class="header">
+            <header>
                 <div class="logo">
-                    
                 </div>
-                <div class="navegacion">
-                    <ul class="navegacion-lista">
+
+                <div class="menu">
+                    <!--
+                        This is the collapsed menu, where the bars are displayed
+                    -->
+                    <div class="colapsado esconder" id="menu-colapsado">
+                        <span class="linea"></span>
+                        <span class="linea"></span>
+                        <span class="linea"></span>
+                    </div>
+                    <!--
+                        This is the normal menu which is displayed in all screen dimensions up to 750px
+                    -->
+                    <ul class="lista-menu" id="menu-lista">
                         <li><a href="index.html" class="itemnav activo">HOME</a></li>
-                        <li><a href="team.html" class="itemnav">TEAM</a></li>
-                        <li><a href="specialities.html" class="itemnav">OUR SPECIALITIES</a></li>
-                        <li><a href="contact.html" class="itemnav">CONTACT</a></li>
+                        <li ><a href="team.html" class="itemnav">TEAM</a></li>
+                        <li ><a href="specialities.html" class="itemnav">SPECIALITIES</a></li>
+                        <li ><a href="contact.html" class="itemnav">CONTACT</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="container-marco"><!--MARCO SUTIL-->
-                    <div class="lineaMarco"></div>
-            </div>
+            </header>
         </div>
         <div class="seccion-biografia"> <!--SEGUNDO PANTALLAZO-->
             <div class="biografia">
                 <div class="imgCarmen"> 
-                    <img src="img/chef.jpg" alt="Se veria a una mujer de una mediana edad con camiseta blanca y una boina de chef, estaria sonriendo">
+                    <img src="../img/chef.jpg" alt="Se veria a una mujer de una mediana edad con camiseta blanca y una boina de chef, estaria sonriendo">
                 </div>
                 <div class="texto"> <!-- Biografia-->
                     <h1 class="titulo-carmen">Carmen Ruscatelle</h1>
@@ -60,7 +69,7 @@
                     <div class="objetive1"><!--Objetivo 1-->
                      
                         <div class="imgObjetive">  
-                           <img src="img/Objetivo1.1.jpg" alt="Es un plato de salmon sobre una mesa de madera marron visto desde arriba">
+                           <img src="../img/Objetivo1.1.jpg" alt="Es un plato de salmon sobre una mesa de madera marron visto desde arriba">
                         </div>
                         <div class="objetive-text">
                             <h4 class="objetive-subtitle">Kitchen</h4>
@@ -81,7 +90,7 @@
                     </div>
                     <div class="objetive2"> <!--Objetivo 2-->
                         <div class="imgObjetive">
-                            <img src="img/Objetivo1.2.jpg" alt="Es un plato de salmon con patatas, limon y pimiento rojo en una mesa de madera oscura">
+                            <img src="../img/Objetivo1.2.jpg" alt="Es un plato de salmon con patatas, limon y pimiento rojo en una mesa de madera oscura">
                         </div>
                         <div class="objetive-text">
                             <h4 class="objetive-subtitle">Excite</h4>
@@ -94,7 +103,7 @@
                     </div>
                     <div class="objetive3"> <!--Objetivo 3-->
                         <div class="imgObjetive">
-                             <img src="img/Objetivo1.3.jpg" alt="Es un salmon visto de frente sobre un plato alto blanco con salsa de color naranjizo">
+                             <img src="../img/Objetivo1.3.jpg" alt="Es un salmon visto de frente sobre un plato alto blanco con salsa de color naranjizo">
                         </div>
                         <div class="objetive-text">
                             <h4 class="objetive-subtitle">Unite</h4>
@@ -116,7 +125,7 @@
         <div class="seccion-history"> <!--SECCION HISTORY-->
             <div class="history">
                 <div class="imgHistory">
-                    <img src="img/History.jpg" alt="Es el interior de un restaurante con unas columnas de estilo antiguo con unas sillas modernas marrones rodeando mesas marrones cuadradas">
+                    <img src="../img/History.jpg" alt="Es el interior de un restaurante con unas columnas de estilo antiguo con unas sillas modernas marrones rodeando mesas marrones cuadradas">
                 </div>
                 <div class="history-text">
                     <h4 class="history-subtitle">Our History</h4>
@@ -160,7 +169,7 @@
                     <p>The most internal and collected area</p>
                 </div>
                 <div class="imgInterior">
-                    <img src="img/Espacio.jpg" alt="Es un sitio espacioso de lujo con lamparas adornadas, sillas de terciopelo negras rodeando mesas de madera de abedul que sujetan copas de cristal">
+                    <img src="../img/Espacio.jpg" alt="Es un sitio espacioso de lujo con lamparas adornadas, sillas de terciopelo negras rodeando mesas de madera de abedul que sujetan copas de cristal">
                 </div>
                 <div class="slider1">
                     <ul class="slider1-items">
@@ -177,7 +186,7 @@
                     <p>The most external and elegant area</p>
                 </div>
                 <div class="imgInterior">
-                    <img src="img/Espacio2.jpg" alt="Se ve una azotea repleta de mesas de madera blancas, con sillas de esparto negras, con unas vistas a un monumento y un cielo azul sin nubes">
+                    <img src="../img/Espacio2.jpg" alt="Se ve una azotea repleta de mesas de madera blancas, con sillas de esparto negras, con unas vistas a un monumento y un cielo azul sin nubes">
                 </div>
                 <div class="slider2">
                         <ul class="slider2-items">
@@ -194,7 +203,7 @@
                     <p>The most intimate and exclusive area</p>
                 </div>
                 <div class="imgInterior">
-                    <img src="img/Espacio3.jpg" alt="Dos sillas de terciopelo negras con forma de butacas rodeando una mesa, al otro lado habria un sofa de cuero, encima hay una lampara de bolsas negras con una luz tenue">
+                    <img src="../img/Espacio3.jpg" alt="Dos sillas de terciopelo negras con forma de butacas rodeando una mesa, al otro lado habria un sofa de cuero, encima hay una lampara de bolsas negras con una luz tenue">
                 </div>
                 <div class="slider1">
                     <ul class="slider1-items">
@@ -234,13 +243,13 @@
                     <div class="linea3"></div>
                     <div class="socialmedia">
                         <ul class="socialMediaNav">
-                            <li><a href=""><img src="img/instagram.png" alt="icono de instagram"></a></li>
-                            <li><a href=""><img src="img/twiiter.png" alt="icono de twiter"></a></li>
+                            <li><a href=""><img src="../img/instagram.png" alt="icono de instagram"></a></li>
+                            <li><a href=""><img src="../img/twiiter.png" alt="icono de twiter"></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer4">
-                    <a href="#home"><img src="img/chevron70x70.svg" alt="circulo que contiene un flecha indicando ascenso"></a>
+                    <a href="#home"><img src="../img/chevron70x70.svg" alt="circulo que contiene un flecha indicando ascenso"></a>
                 </div>
             </div>
             <div class="copy">
@@ -248,5 +257,6 @@
             </div>
         </div>
     </div>
+    <script src="script-menu.js"></script>
 </body>
 </html>

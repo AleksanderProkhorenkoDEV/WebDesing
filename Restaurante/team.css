@@ -68,8 +68,9 @@
     position:relative;
     
     border:1px solid var(--mainColor);
+    z-index: -1;
 }
-.linea{
+.linea-marco{
     position:absolute;
     
     height:20px;
@@ -78,7 +79,7 @@
     left:50%;
 }
 .logo{
-    background-image:url(img/LogoBlanco.svg);
+    background-image:url(../img/LogoBlanco.svg);
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;

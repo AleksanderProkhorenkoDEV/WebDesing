@@ -40,7 +40,7 @@
 
     }
 .logo{
-    background-image:url(img/LogoBlanco.svg);
+    background-image:url(../img/LogoBlanco.svg);
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
