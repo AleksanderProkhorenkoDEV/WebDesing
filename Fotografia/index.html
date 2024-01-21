@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aleksander Desing</title>
+        <link rel="stylesheet" href="menu-burger.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="menuColapsado.css">
     </head>
     <body>
         <div class="contenedor-global">
@@ -17,13 +17,20 @@
                             <p>ALEKSANDER STUDIO</p>
                         </div>
                     </div>
+    
                     <div class="menu">
-                        <div class="menu-toggle">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
+                        <!--
+                            This is the collapsed menu, where the bars are displayed
+                        -->
+                        <div class="colapsado esconder" id="menu-colapsado">
+                            <span class="linea"></span>
+                            <span class="linea"></span>
+                            <span class="linea"></span>
                         </div>
-                        <ul class="ul-nav">
+                        <!--
+                            This is the normal menu which is displayed in all screen dimensions up to 750px
+                        -->
+                        <ul class="lista-menu" id="menu-lista">
                             <li><a href="#inicio-home" class="itemnav">HOME</a></li>
                             <li><a href="#proyectos" class="itemnav">PROJECTS</a></li>
                             <li><a href="#porfolio" class="itemnav">PORTFOLIO</a></li>
@@ -37,6 +44,7 @@
                         </ul>
                     </div>
                 </header>
+
                 <div class="contenedor-titulo">
                     <p class="titulo-header">Photography is the means, not the end</p>
                 </div>
@@ -699,7 +707,7 @@
                 <p>© Aleksander Design 2023 All rights reserved</p>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
-        <script src="menuScrip.js"></script>
+        
+        <script src="assets/js/script-menu.js"></script>
     </body>
 </html>
