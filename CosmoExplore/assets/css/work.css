@@ -30,6 +30,9 @@
 }
 .contenedor-cartas{
     width: 100%;
+
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 .miembros{
 
@@ -86,6 +89,9 @@
 
     width: 100%;
     height: 100%;
+
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 .contenedor-azul{
     width: 70%;
@@ -263,6 +269,8 @@
     background-repeat: no-repeat;
     background-size: 25%;
     background-position: right bottom;
+
+    padding: 4rem 0;
 }
 
 .miembros-premios{
@@ -386,6 +394,8 @@
 
     display: flex;
     flex-direction: column;
+
+    padding: 4rem 0;
 }
 
 .conferencias-informacion{

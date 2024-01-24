@@ -47,6 +47,8 @@
     background-position: top right;
     background-size: 35%;
     background-repeat: no-repeat;
+
+    margin: 2rem 0;
 }
 
 .recomendacion-informacion {
@@ -193,7 +195,7 @@
     flex-direction: column;
     gap: 2rem;
 
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 4rem;
 }
 
@@ -204,7 +206,10 @@
 */
 .testimonios {
     display: flex;
+    align-items: center;
 
+    height: fit-content;
+    
     color: white;
     background-color: black;
 }
@@ -212,20 +217,23 @@
 .contenedor-cartas-testimonial {
     display: flex;
     justify-content: center;
-    align-items: center;
+    height: fit-content;
     gap: 2rem;
+
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .testimonio {
     width: 35%;
-    
+
     padding: 2rem;
 
     display: flex;
     flex-direction: column;
 
     gap: 2rem;
-
+    
     border: 1px solid white;
 }
 
