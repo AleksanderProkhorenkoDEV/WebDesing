@@ -1,0 +1,344 @@
+/*
+    -------------------------------------------------------
+        HERO
+    -------------------------------------------------------
+*/
+.hero {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("../image/Hero_discoverd.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+
+    position: relative;
+
+    background-color: black;
+}
+
+/*
+    -------------------------------------------------------
+       GALERIA DE FOTOS MANSORY GRID
+    -------------------------------------------------------
+*/
+
+.galeria-fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+
+    background-color: black;
+}
+
+/*
+    -------------------------------------------------------
+       RECOMENDACIONES 
+    -------------------------------------------------------
+*/
+.recomendaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: url("../image/HexagonoPatron.svg");
+    background-position: top right;
+    background-size: 35%;
+    background-repeat: no-repeat;
+}
+
+.recomendacion-informacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 2rem;
+
+}
+
+
+.texto-recomendacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+    width: 55%;
+}
+
+.lista-apps {
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.lista-1,
+.lista-2,
+.lista-3 {
+    padding-left: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.paginacion {
+    width: 250px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.numero {
+    border: 1px solid grey;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.iconoPrev,
+.iconoNext {
+    width: 15px;
+    height: 15px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    cursor: pointer;
+}
+
+.activo {
+    color: var(--mainColor);
+}
+
+.activo-paginacion {
+    border: 2px solid var(--dorado);
+    color: var(--dorado);
+}
+
+.iconoPrev {
+    background-image: url("../icons/arrow_back_ios_FILL0_wght400_GRAD0_opsz24.svg");
+}
+
+.iconoNext {
+    background-image: url("../icons/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.svg");
+}
+
+.tabulacion {
+    padding-left: 1rem;
+}
+
+.resaltar {
+    font-weight: 500;
+}
+
+.titulo-lista-apps {
+    font-size: var(--navSize);
+    font-weight: 500;
+}
+
+.download {
+    color: gray;
+    opacity: 6;
+
+    cursor: pointer;
+}
+
+.download:hover {
+    color: var(--mainColor);
+    opacity: 1;
+}
+
+/*
+    -------------------------------------------------------
+       RUTAS
+    -------------------------------------------------------
+*/
+.ruta {
+    display: flex;
+
+    padding: 2rem;
+
+    color: white;
+    background-color: black;
+}
+
+/*
+    -------------------------------------------------------
+       PREGUNTAS FRECUENTES
+    -------------------------------------------------------
+*/
+.contenedor-faq {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+/*
+    -------------------------------------------------------
+       TESTIMONIOS
+    -------------------------------------------------------
+*/
+.testimonios {
+    display: flex;
+
+    color: white;
+    background-color: black;
+}
+
+.contenedor-cartas-testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.testimonio {
+    width: 35%;
+    
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+
+    border: 1px solid white;
+}
+
+.cabecera-testimonio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imagen-testimonio {
+    border-radius: 100%;
+
+    width: 200px;
+    height: 200px;
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.datos-testimonio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.imgTestimonio1 {
+    background-image: url("../image/Testimonio1.jpg");
+}
+
+.imgTestimonio2 {
+    background-image: url("../image/Testimonio2.jpg");
+}
+
+/*
+    -------------------------------------------------------
+       MEDIA QUERYS
+    -------------------------------------------------------
+*/
+@media screen and (max-width:1080px) {
+    .galeria-fotos {
+        flex-direction: column;
+    }
+    .galeria-palabra{
+        flex-direction: row;
+    }
+    .galeria-palabra::after, .galeria-palabra::before{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:885px){
+    .recomendacion-informacion{
+        flex-direction: column;
+    }
+    .contenedor-cartas-testimonial{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .testimonio{
+        width: 70%;
+    }
+    .texto-recomendacion{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:670px){
+    .rutaTestimonio-fotos {
+        flex-direction: row;
+    }
+    .rutaTestimonio-fotos::after, .rutaTestimonio-fotos::before{
+        display: none;
+    }
+    .ruta{
+        flex-direction: column;
+    }
+    .faq{
+        width: 80%;
+    }
+    .testimonios{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:550px){
+    .recomendacion-informacion{
+        padding: 0;
+    }
+    .imagen-recomendacion img{
+        width: 350px;
+        height: 350px;
+    }
+    .testimonio{
+        width: 80%;
+    }
+    .imagen-testimonio{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .cabecera-testimonio{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .datos-testimonio{
+        flex-direction: row;
+    }
+    .grid__title{
+        font-size: 2rem !important;
+    }
+}

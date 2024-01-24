@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+    -------------------------------------------------------
+        RESET CSS
+    -------------------------------------------------------
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/*
+
+  RESET BUTTOM
+
+*/
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    line-height: 1;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/*
+
+  RESET FIELDSET
+
+*/
+
+fieldset {
+    display: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    line-height: 1;
+    color: inherit;
+}
+
+body {
+    font-size: var(--mainSize);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
+    width: 100%;
+    height: 100%;
+
+    text-align: justify;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+    -------------------------------------------------------
+        PSEUDO VARIABLES
+    -------------------------------------------------------
+*/
+:root {
+    /*COLORES*/
+
+    --mainColor: #00257f;
+    --dorado: #ebb410;
+
+    /*TIPOGRAFIAS*/
+    --titulosEXO: 'Exo 2', sans-serif;
+    --parrafosMontserrat: 'Montserrat', sans-serif;
+
+    /*TAMAÑO TIPOGRAFIA Y SUS PESOS*/
+    --mainSize: clamp(1rem, 0.96rem + 0.2vw, 1.2rem);
+    --cabeceraSize: clamp(2rem, 1.72rem + 1.4vw, 3.4rem);
+    --cabeceraWhiteSize: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
+    --navSize: clamp(1.25rem, 1.1875rem + 0.3125vw, 1.5625rem);
+
+
+    --regularWeight: 400;
+    --extraBoldCabecera: 900;
+
+
+    scroll-behavior: smooth;
+}
+
+/*
+    -------------------------------------------------------
+        ESTILOS 
+    -------------------------------------------------------
+*/
+
+.contenedor-global {
+    width: 100%;
+    height: 100%;
+}
+
+strong {
+    font-weight: var(--regularWeight);
+    color: var(--dorado);
+}
+
+.cabecera-seccion {
+
+    border-bottom: 1px solid var(--mainColor);
+
+    text-align: end;
+
+    width: 20%;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.cabecera-h1 {
+    font-size: var(--cabeceraWhiteSize);
+    font-family: var(--titulosEXO);
+    font-weight: var(--regularWeight);
+    font-style: italic;
+}
+
+.incrementoLinea {
+    width: 30%;
+}
+
+.incrementoLinea2 {
+    width: 40%;
+}
+
+.parrafo-izquierda {
+    text-align: justify;
+}
+
+.palabra-vertical {
+    white-space: pre;
+
+    color: white;
+
+    min-width: 5%;
+    gap: .3rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.palabra-vertical span {
+    display: block;
+
+    font-weight: var(--extraBoldCabecera);
+    font-size: var(--cabeceraSize);
+}
+
+.palabra-vertical::after,
+.palabra-vertical::before {
+    content: "";
+
+    height: 2.9rem;
+    border: 1px solid white;
+}
+
+/*
+    -------------------------------------------------------
+        ESTILOS HERO
+    -------------------------------------------------------
+*/
+nav {
+    width: 15%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.logo,
+.menu,
+.rrss {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 75%;
+    height: 75%;
+}
+
+.lista-rss {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.tamañoIcono {
+    width: 25px;
+    height: 25px;
+}
+
+.item-menu a {
+    font-weight: var(--regularWeight);
+
+    color: white;
+}
+
+.activo a {
+    color: var(--dorado);
+}
+
+.scrol {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.btn {
+    padding: .5rem;
+    border: 1px solid white;
+
+    width: 18%;
+
+    text-align: center;
+    color: white;
+
+    cursor: pointer;
+
+    transition: all 300ms ease-in-out;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-negro {
+    padding: .5rem;
+    border: 1px solid black;
+
+    width: fit-content;
+
+    text-align: center;
+    color: black;
+
+    cursor: pointer;
+
+    transition: all 300ms ease-in-out;
+}
+
+.btn-negro:hover {
+    background-color: black;
+    color: white;
+}
+
+/*
+    -------------------------------------------------------
+        ESTILOS CARTAS
+    -------------------------------------------------------
+*/
+.contenedor-cartas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.carta {
+    width: clamp(12.5rem, 10rem + 12.5vw, 25rem);
+    height: clamp(12.5rem, 8.75rem + 18.75vw, 31.25rem);
+
+    position: relative;
+}
+
+.panel-traslucido {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    background-color: rgba(255, 255, 255, .6);
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    transition: all 250ms ease-in-out;
+    opacity: 0;
+}
+
+.panel-traslucido:hover {
+    opacity: 1;
+}
+
+.titulo-carta {
+    font-weight: var(--regularWeight);
+    font-size: var(--navSize);
+}
+
+/*
+    -------------------------------------------------------
+        ESTILOS FOOTER
+    -------------------------------------------------------
+*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    color: white;
+    background-color: black;
+
+    position: relative;
+    z-index: 2;
+}
+.imagenFooter{
+    position: absolute;
+    z-index: -1;
+
+    filter: brightness(30%);
+    background-image: url("../image/wallpaperbetter.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 100%;
+}
+footer::before {
+    content: "";
+
+    position: relative;
+    top: 225px;
+    left: 70px;
+
+    width: 150px;
+    height: 150px;
+
+    background-image: url("../image/IGN-Footer-Ball.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+}
+
+.contenido-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    padding: 2rem;
+    filter: brightness(100%);
+
+}
+
+.nav-footer,
+.about-footer,
+.contact-footer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.nav-footer {
+    z-index: 2;
+}
+
+.lista-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.itemnFo {
+    font-weight: var(--regularWeight);
+}
+
+.itemnFo a {
+    color: white;
+}
+
+.titulo-footer {
+    font-size: var(--navSize);
+    font-family: var(--titulosEXO);
+    font-weight: 300;
+
+    text-transform: uppercase;
+
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.linea-footer {
+    width: 90%;
+    border: 1px solid white;
+
+}
+
+.telefono,
+.gmail,
+.twitter,
+.instagram {
+    position: relative;
+}
+
+.telefono::before {
+    content: "";
+    position: absolute;
+
+    left: -15%;
+
+    min-width: 25px;
+    min-height: 25px;
+
+    background-image: url("../icons/phone-solid-white.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.gmail::before {
+    content: "";
+    position: absolute;
+
+    left: -15%;
+
+    min-width: 25px;
+    min-height: 25px;
+
+    background-image: url("../icons/Email-white.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.twitter::before {
+    content: "";
+    position: absolute;
+
+    left: -15%;
+
+    min-width: 25px;
+    min-height: 25px;
+
+    background-image: url("../icons/x-twitter-white.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.instagram::before {
+    content: "";
+    position: absolute;
+
+    left: -15%;
+
+    min-width: 25px;
+    min-height: 25px;
+
+    background-image: url("../icons/instagram-white.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.copy {
+    background-color: var(--mainColor);
+    color: white;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+/*
+    -------------------------------------------------------
+        MEDIA QUERYS 
+    -------------------------------------------------------
+*/
+
+@media screen and (max-width:1405px) {
+    nav {
+        width: 20%;
+    }
+
+    .cabecera-seccion {
+        width: 40%;
+    }
+
+    .incrementoLinea2 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .contenido-footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nav-footer,
+    .about-footer,
+    .contact-footer {
+        width: 50%;
+    }
+
+    nav {
+        width: 25%;
+
+        background-color: rgba(0, 0, 0, .6);
+    }
+}
+
+@media screen and (max-width:850px) {
+    nav {
+        width: 30%;
+        background-color: rgba(0, 0, 0, .8);
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .nav-footer,
+    .about-footer,
+    .contact-footer {
+        width: 70%;
+    }
+
+    .cabecera-seccion {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .nav-footer,
+    .about-footer,
+    .contact-footer {
+        width: 90%;
+    }
+}

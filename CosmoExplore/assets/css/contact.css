@@ -1,0 +1,353 @@
+/*
+    -------------------------------------------------------
+        HERO
+    -------------------------------------------------------
+*/
+.hero {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("../image/Hero_contact.jpg");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center right;
+
+    position: relative;
+
+    background-color: black;
+}
+/*
+    -------------------------------------------------------
+        tickeds
+    -------------------------------------------------------
+*/
+.contenedor-tickeds{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+}
+.cartas-tickeds{
+    display: flex;
+}
+.tickeds{
+    width: 33.3334%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    gap: 2rem;
+    padding: 2rem;
+}
+.ticked-titulo{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: var(--regularWeight);
+
+    color: var(--dorado);
+}
+.precio{
+    font-weight: var(--regularWeight);
+}
+.aumentar-btn{
+    width: 100%;
+
+    text-transform: uppercase;
+}
+/*
+    -------------------------------------------------------
+        RESERVAS
+    -------------------------------------------------------
+*/
+
+.contenedor-reservas{
+    display: flex;
+    flex-direction: column;
+
+    margin: 2rem 0;
+}
+.interfaz-reservas{
+    display: flex;
+    flex-wrap: wrap;
+}
+.calendario, .datos-reserva{
+    flex: 1;
+}
+.datos-reserva{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+thead{
+    border-bottom:1px solid grey ;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+
+    transition: all .2s ease-in-out;
+}
+td{
+    cursor: pointer;
+}
+td:hover{
+    background-color: rgba(0,37,127,.8);
+    color: white;
+}
+.gris{
+    opacity: .6;
+    color: gray;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    width: 70%;
+}
+.fila1-form{
+    display: flex;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 1rem;
+}
+.item1, .item2{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.fila2-form, .fila3-form, .fila4-form{
+    flex: 1;    
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+input[type="text"]{
+    border: 0;
+    outline: 0;
+
+    border-bottom: 1px solid var(--mainColor);
+
+    padding: .3rem;
+    cursor: pointer;
+}
+input[type="text"]:focus{
+    border: 1px solid var(--mainColor);
+}
+input[type="submit"]:focus{
+    border: 1px solid var(--mainColor);
+}
+input[type="submit"]{
+    outline: 0;
+    padding: .8rem;
+
+    background: none;
+    border: 1px solid var(--mainColor);
+
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    border: 1px solid var(--dorado);
+    background-color: var(--dorado);
+
+    color: white;
+}
+select {
+
+    border: 0;
+    outline: 0;
+    border: 1px solid var(--mainColor);
+    padding: .3rem;
+    cursor: pointer;
+}
+
+select:focus {
+    border: 1px solid var(--mainColor);
+}
+
+/*
+    -------------------------------------------------------
+        CONTACT
+    -------------------------------------------------------
+*/
+
+.contenedor-contacto{
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+    background-color: black;
+}
+.informacion-contacto{
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+.datos-contacto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+.formulario-contacto{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telefono-contacto{
+    position: relative;
+}
+.telefono-contacto::before{
+    content: "";
+
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    left:-30px;
+    top: 0;
+
+    background-image: url("../icons/phone-solid-white.svg");
+}
+
+.email-contacto{
+    position: relative;
+}
+.email-contacto::before{
+    content: "";
+
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    left:-30px;
+    top: 0;
+
+    background-image: url("../icons/Email-white.svg");
+}
+
+.form-contact{
+    background: none;
+    color: white;
+}
+/*
+    -------------------------------------------------------
+        LOCALIZACION
+    -------------------------------------------------------
+*/
+.localizacion{
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+    -------------------------------------------------------
+       PREGUNTAS FRECUENTES
+    -------------------------------------------------------
+*/
+.contenedor-faq {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+
+/*
+    -------------------------------------------------------
+       MEDIA QUERYS
+    -------------------------------------------------------
+*/
+
+@media screen and (max-width:1000px) {
+    .tickeds{
+        width: 50%;
+    }
+    .cartas-tickeds{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .informacion-contacto{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .contenedor-contacto{
+        padding: 2rem 0;
+    }
+}
+@media screen and (max-width:700px) {
+    .palabra-vertical{
+        flex-direction: row;
+    }
+    .palabra-vertical::after, .palabra-vertical::before{
+        display: none;
+    }
+    .contenedor-tickeds{
+        flex-direction: column;
+    }
+    .tickeds{
+        width: 60%;
+    }
+    .contenedor-contacto{
+        flex-direction: column;
+    }
+
+    .calendario{
+        padding: 1rem;
+        width: 70%;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    th,td{
+        padding: 3px;
+        font-size: 0.7rem;
+    }
+    .fila1-form{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:400px){
+    th,td{
+        font-size: 0.5rem;
+    }
+}

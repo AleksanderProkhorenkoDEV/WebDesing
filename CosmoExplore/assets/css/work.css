@@ -1,0 +1,654 @@
+/*
+    -------------------------------------------------------
+        HERO
+    -------------------------------------------------------
+*/
+.hero {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("../image/Hero_Specialities.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+
+    position: relative;
+
+    background-color: black;
+}
+/*
+    -------------------------------------------------------
+       ESTILOS MIEMBROS
+    -------------------------------------------------------
+*/
+.redes-carta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.contenedor-cartas{
+    width: 100%;
+}
+.miembros{
+
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: black;
+}
+.cartaIMG1{
+    background-image: url("../image/JamesPeebles.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cartaIMG2{
+    background-image: url("../image/George_F.R_Ellis.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cartaIMG3{
+    background-image: url("../image/Neil_Gehrels.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rango{
+    color: white;
+}
+.redes-sociales{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+/*
+    -------------------------------------------------------
+       ESTILOS PROYECTOS
+    -------------------------------------------------------
+*/
+.mejores-proyectos{
+    width: 100%;
+    height: 100%;
+
+    margin-bottom: 10rem;
+    margin-top: 2rem;
+}
+.contenedor-informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+.contenedor-azul{
+    width: 70%;
+    height: 60vh;
+
+    background-color: var(--mainColor);
+
+    position: relative;
+}
+.contenedor-imagenes{
+    width: 50%;
+    height: 80%;
+    aspect-ratio: 1/1;
+
+   
+    position: absolute;
+    bottom: -15%;
+    left: -10%;
+   
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.fila1{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    height: 50%;
+}
+.fila2{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    height: 50%;
+}
+
+.img1, .img2, .img3, .img4{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    width: 100%;
+    height: 100%;
+}
+.img1{
+    background-image: url("../image/AgujeroNegro_Best_Project_2.jpg");
+}
+.img2{
+    background-image: url("../image/agujeroNegro_Best_Project_6.jpg");
+}
+.img3{
+    background-image: url("../image/AgujeroNegro_Best_Project_5.jpg");
+    
+}
+.img4{
+    background-image: url("../image/agujeroNegro_Best_Project.jpg");
+}
+.contenedor-titulo{
+    height: 20%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    padding-left: 2rem;
+}
+.titulo-contenedor-azul{
+    color: white;
+    font-size: var(--cabeceraWhiteSize);
+}
+
+.contenido-informacion{
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+}
+.texto-proyecto{
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 1rem;
+}
+.item-texto{
+    width: 80%;
+}
+.parrafo-mejor-proyecto{
+    color: white;
+}
+
+
+/*
+    -------------------------------------------------------
+       ESTILOS BLOG 
+    -------------------------------------------------------
+*/
+.blog-proyectos{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+   margin-bottom: 2rem;
+}
+.blog{
+    height: 500px;
+    width: 400px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    gap: 1rem;
+}
+.imagen-blog{
+    width: 400px;
+    height: 225px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.img1Blog{
+    background-image: url("../image/agujerosnegros.jpg");
+}
+.img2Blog{
+    background-image: url("../image/Asteroide.jpg");
+}
+.img3Blog{
+    background-image: url("../image/galaxia_roban.jpg");
+}
+
+.title{
+    font-weight: 600;
+    font-size: var(--navSize);
+}
+.author-span{
+    font-weight: 600;
+}
+/*
+    -------------------------------------------------------
+       ESTILOS PREMIOS
+    -------------------------------------------------------
+*/
+
+.premios{
+    background-color: black;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    
+    background-image: url("../image/HexagonoPatron.svg");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: right bottom;
+}
+
+.miembros-premios{
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.premio-izquierda, .premio-derecha{
+    height: 33.3334%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.premio-izquierda{
+    justify-content: start;
+}
+.premio-derecha{
+    justify-content: end;
+}
+.imagen-dueño-premio{
+    width:20%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.contenido-premio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 1rem;
+
+    color: white;
+}
+.contenido-premio-izquierda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 1rem;
+
+    color: white;
+}
+
+.imgPremio1{
+    background-image: url("../image/premio1600x400.webp");
+}
+.imgPremio2{
+    background-image: url("../image/premio2600x400.jpg");   
+}
+.imgPremio3{
+    background-image: url("../image/premio3600x400.jpg");
+    background-position:top center;
+}
+
+.izquierda{
+    text-align: right;
+}
+.margen-izquierda{
+    margin-left: 1rem;
+}
+.margen-derecho{
+    margin-right: 1rem;
+}
+.titulo-premios,.titulo-premios-izquierda{
+    width: fit-content;
+
+    font-weight: var( --regularWeight);
+    font-size: var(--navSize);
+
+    position: relative;
+
+}
+.titulo-premios-izquierda::before{
+    content: "";
+    min-width: 25px;
+    min-height: 25px;
+
+    position: absolute;
+    left: -20%;
+    top: 0;
+    bottom: 0;
+    
+    background-image: url("../icons/emoji_events_FILL0_wght400_GRAD0_opsz24.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.titulo-premios::after{
+    content: "";
+    min-width: 25px;
+    min-height: 25px;
+
+    position: absolute;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+
+    background-image: url("../icons/emoji_events_FILL0_wght400_GRAD0_opsz24.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*
+    -------------------------------------------------------
+       ESTILOS EVENTOS Y CONFERENCIAS
+    -------------------------------------------------------
+*/
+.conferencias{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.conferencias-informacion{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+.contenedor-azul-informacion{
+    width: 70%;
+    height: 70vh;
+
+    background-color: var(--mainColor);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+    position: relative;
+}
+.fila-imagenes-superior, .fila-imagenes-inferior{
+    width: 60%;
+    height: 40%;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    position: absolute;
+}
+
+.fila-imagenes-superior{
+    left: -15%;
+    top: -15%;
+}
+.fila-imagenes-inferior{
+    bottom: -15%;
+    right: -15%;
+}
+.imgConf1, .imgConf2, .imgConf3, .imgConf4{
+    width: 100%;
+    height: 100%;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgConf1{
+    background-image: url("../image/conferencia.jpg");
+}
+.imgConf2{
+    background-image: url("../image/conferencia2.png");
+}
+.imgConf3{
+    background-image: url("../image/Evento1600x400.jpg");
+}
+.imgConf4{
+    background-image: url("../image/Evento2600x400.jpg");
+}
+.fila-informacion{
+    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.titulo-informacion-azul{
+    font-size: var(--navSize);
+    font-weight: var(--regularWeight);
+}
+.palabra-contenedor-span{
+    font-weight: 500;
+}
+
+
+/*
+    -------------------------------------------------------
+       MEDIA QUERYS
+    -------------------------------------------------------
+*/
+
+@media screen and (max-width:1400px){
+    .btn{
+        width: 24%;
+    }
+}
+@media screen and (max-width:1200px){
+    .contenedor-azul{
+        width: 80%;
+    }
+    .contenedor-azul-informacion{
+        width: 80%;
+    }
+    .fila-imagenes-inferior{
+        right: -10%;
+    }
+    .fila-imagenes-superior{
+        left: -10%;
+    }
+}
+@media screen and (max-width:1000px){
+    .fila-imagenes-superior{
+        top: -20%;
+    }
+    .btn{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:850px){
+    .contenido-informacion{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mejores-proyectos{
+        margin-bottom: 2rem;
+    }
+    .contenedor-imagenes{
+        position: static;
+
+        width: 80%;
+    }
+    .texto-proyecto{
+        width: 80%;
+    }
+    .miembros-premios{
+        gap: 2rem;
+    }
+    .premio-izquierda, .premio-derecha{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .imagen-dueño-premio{
+        width: 200px;
+        height: 200px;
+    }
+    .premio-derecha{
+        flex-direction: column-reverse;
+    }
+    .contenido-premio-izquierda{
+        text-align: left;
+        align-items:normal;
+    }
+
+    .fila-imagenes-inferior, .fila-imagenes-superior{
+        position: static;
+    }
+    .contenedor-azul-informacion{
+        height: 80vh;
+    }
+    .conferencias-informacion{
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width:750px){
+    .conferencias-informacion{
+        align-items:normal ;
+    }
+}
+@media screen and (max-width:600px){
+    .palabra-vertical {
+        flex-direction: row;
+    }
+    .palabra-vertical::after, .palabra-vertical::before{
+        display: none;
+    }
+    .contenedor-azul{
+        height: 70vh;
+    }
+    .miembros{
+        flex-direction: column;
+    }
+    .premios{
+        flex-direction: column;
+    }
+    .btn{
+        width: 35%;
+    }
+    .contenedor-azul-informacion, .contenedor-azul{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .premio-derecha, .premio-izquierda{
+        width: 80%;
+    }
+    .miembros-premios{
+        align-items: center;
+    }
+
+    .blog, .imagen-blog{
+        width: 300px;
+        height: 400px;
+    }
+    .blog-proyectos{
+        justify-content: center;
+    }
+
+    .fila-imagenes-inferior, .fila-imagenes-superior{
+        flex-direction: column;
+        height: 70%;
+    }
+    .contenedor-azul-informacion{
+        height: 95vh;
+    }
+    .conferencias-informacion{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width:450px){
+    .cabecera-seccion {
+        width: 70%;
+    }
+    .blog-proyectos{
+        gap: 2rem;
+    }
+    .fila1, .fila2{
+        flex-direction: column;
+    }
+    .contenedor-imagenes{
+        height: 100%;
+    }
+    .contenedor-azul{
+        height: 90vh;
+    }
+    .titulo-contenedor-azul{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .texto-proyecto{
+        width: 90%;
+        height: 80%;
+    }
+    .btn{
+        width: 40%;
+    }
+    .contenedor-azul{
+        height: 130vh;
+    }
+    .conferencias-informacion{
+        margin-bottom: 30rem;
+    }
+    .contenedor-azul-informacion{
+        height: 150vh;
+    }
+
+}

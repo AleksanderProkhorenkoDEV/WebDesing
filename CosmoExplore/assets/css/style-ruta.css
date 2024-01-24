@@ -1,0 +1,268 @@
+.titulo-subseccion {
+    font-weight: var(--regularWeight);
+    font-size: var(--navSize);
+    font-style: italic;
+
+    padding-bottom: 2rem;
+}
+
+/*
+
+    RUTAS CULTURALES
+
+*/
+.ruta-cultural {
+    width: 100%;
+    height: 100%;
+
+}
+
+.texto-cultura-introduccion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+.parrafo1,
+.parrafo2 {
+    flex: 1;
+    padding: 2rem;
+}
+
+/*
+
+    ESTILO SLIDER
+
+*/
+
+fieldset {
+    display: none;
+}
+
+.campoActivo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem;
+
+}
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item1,
+.item2 {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.item2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.item2 p {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--mainSize);
+    text-align: justify;
+    padding-right: 2rem;
+}
+.item2 h3{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.titulo {
+    padding-bottom: 2rem;
+}
+
+/*
+    
+  Estilos barra progreso
+    
+*/
+.contenedor-progreso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lineaTiempo {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    width: 350px;
+
+    position: relative;
+}
+
+.lineaTiempo::before {
+    content: "";
+    background-color: grey;
+    position: absolute;
+    width: 95%;
+    left: 0;
+    height: 4px;
+    top: 43%;
+    z-index: 1;
+}
+
+.progreso {
+    background-color: var(--dorado);
+    position: absolute;
+    top: 47.6%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: 1;
+    transition: 0.4s ease;
+}
+
+.circulo {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid grey;
+    transition: 0.4s ease;
+
+    z-index: 2;
+}
+
+/*
+    
+        ESTILO BOTONES
+    
+*/
+
+.bntBarraProgreso {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-ruta {
+    border: 1px solid white;
+    color: white;
+    border: 1;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+    transition: all 200ms ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-ruta:hover {
+    border: 1px solid var(--borde-activo);
+    background-color: white;
+    color: black;
+    transition: all 200ms ease-in-out;
+}
+
+.btn-ruta:active {
+    transform: scale(.98);
+}
+
+.btn-ruta:focus {
+    outline: 0;
+}
+
+.bar {
+    background-color: white !important;
+}
+
+.texto-cultural,
+.texto-aventura,
+.texto-familiar,
+.texto-natural {
+    font-size: clamp(4rem, 1.333rem + 8.889vw, 12rem);
+}
+
+/*
+    -------------------------------------------------------
+        MEDIA QUERYS
+    -------------------------------------------------------
+*/
+
+@media screen and (max-width:1600px) {
+    .item2 p, .item2 h3 {
+        padding-left: 2rem;
+    }
+}
+@media screen and (max-width:1200px){
+    .item1{
+        align-items: center;
+    }
+    .item1 img{
+        width: 500px;
+        height: 300px;
+    }
+}
+@media screen and (max-width:1050px) {
+    .item1 img {
+        width: 450px;
+        height: 250px;
+    }
+    .contenido{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .item1 img {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .item1 img {
+        width: 350px;
+        height: 150px;
+    }
+    .item2{
+        width:100%;
+    }
+    .campoActivo{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .item1 img {
+        width: 300px;
+        height: 100px;
+    }
+    .item2 p{
+        width: auto;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .item2 p, .item2 h3 {
+        padding-left: 2rem;
+    }
+}
